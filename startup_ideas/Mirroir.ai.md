@@ -39,24 +39,29 @@ E-commerce today is detached and impersonal. Shoppers scroll past generic produc
 
 Mirroir.ai reinvents online shopping by letting users see **themselves** in every product photo — styled in aspirational, cinematic environments that reflect the life they want to live.
 
-**Imagine getting on your favorite brand's website and seeing *you* wearing the clothes, accessories, or items — already living the lifestyle they represent. You are now the model. Sales happen when a customer feels seen.**
+Template-first generation (to reduce compute and raise quality):
+* Brand-approved layered template scenes (background, lighting rigs, product passes, occlusion mattes)
+* Personalize only the person layer and local blend zones (wrist, hand, shoulder, neck) with fast post-processing for lighting/shadows
+* Adjust color grading and reflections without re-generating the entire frame
+
+Category wedge (luxury-first):
+* Start with accessories: watches, handbags, jewelry, eyewear, shoes — precise local compositing, fewer drape/fit issues
+* Next: outerwear and dresses in constrained poses and curated scenes
+* Later: full apparel with dynamic fit after template and pose control mature
+
+Identity-forward UX:
+* Fewer products, one-by-one, with 3–5 hero scenes per product
+* Narrative scenes that merge identity and product to trigger desire
 
 **Core Features:**
-* **Personal AI Photoshoots**: Upload one photo, see yourself in any outfit
-* **Lifestyle Scenes**: Aspirational environments (yacht, Paris rooftop, Amalfi coast)
-* **Body Type Matching**: AI adapts to your specific measurements and proportions
+* **Personal AI Photoshoots**: Upload 1–2 photos once; reuse across all scenes
+* **Template Scenes**: Yacht golden hour, Paris rooftop, gallery opening, etc.
+* **Local Fit & Relight**: Believable contact shadows, highlights, micro-reflections
 * **Social Sharing**: Instantly shareable looks optimized for social media
 * **Brand Integration**: Seamless embedding in any e-commerce platform
 
-Upload a photo, height, and body type once. Then browse your favorite brands and see:
-* A watch on your wrist on a yacht at golden hour
-* A jacket on your frame at a rooftop bar in Paris
-* A dress on you at a seaside dinner in Amalfi
-
 🛑 This isn't a virtual try-on tool.
-✅ It's a **fully generated, hyper-personalized AI photoshoot integrated in your shopping experience** that builds emotional ownership by depicting *you* living with the product — before you ever buy it.
-
-This turns each shopping session into a **vision board** experience, making every product feel already yours.
+✅ It's a **hyper-personalized, scene-based shopping experience** that builds emotional ownership by depicting *you* living with the product — before you ever buy it.
 
 ---
 
@@ -112,6 +117,40 @@ This turns each shopping session into a **vision board** experience, making ever
 **SOM (Serviceable Obtainable Market):**
 * Target 0.5% of fashion e-commerce market in 5 years: $8.5B opportunity
 * Focus on DTC brands and social-first shoppers initially
+
+---
+
+### Luxury Pilot Plan (Integrated)
+
+Why luxury first
+* Smaller, iconic SKU sets; immaculate imagery and scene control
+* Higher AOV offsets compute and integration costs
+* Consumers derive more identity value → stronger shareability and conversion
+
+Initial categories and targets
+* Watches, fine jewelry, handbags, sunglasses, designer shoes
+* Launch partners with iconic brand environments (yacht clubs, rooftops, galleries)
+
+Motion to market
+* Co-branded launches with 3–5 hero scenes per product line; curated campaign aesthetics
+* Concierge onboarding for top customers; influencer seeding with “Brand Grade” QA
+* Strict brand QA pipeline (logo alignment, color tolerances, materials; auto-flagging)
+
+Compute strategy (today → 12 months)
+* Pre-render template scenes; personalize only person + local interaction zones
+* Two-stage pipeline: fast preview → on-demand HD export for saves/shares
+* Cache identity embeddings/poses; nearest-neighbor scene retrieval to minimize edits
+
+KPIs (Phase 1)
+* Preview→Final export rate ≥ 35%
+* Add-to-cart uplift vs. brand baseline ≥ +12%
+* Conversion uplift vs. control ≥ +3–5%
+* Return rate reduction (size/style) ≥ −8–12%
+
+Roadmap (12 months)
+* 0–3 mo: Template pipeline; 2 luxury pilots; accessories only; setup wizard
+* 3–6 mo: Scene packs; handbags/shoes; preview→HD flow; brand QA dashboards
+* 6–12 mo: Limited cinemagraph loops; broaden brand roster; creator/referral program
 
 **Growth Drivers:**
 * Convergence of AI-generated content that is hyper-realistic and scalable
