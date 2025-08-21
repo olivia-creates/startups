@@ -1,6 +1,6 @@
 ---
 idea_name: Mirroir.ai
-idea_version: 1.0.0
+idea_version: 1.1.0
 template_name: startup_ideas_template
 template_version: 1.0.0
 last_updated: 2025-08-20
@@ -468,3 +468,67 @@ Roadmap (12 months)
 **Tagline**
 
 **"Mirroir.ai — You got it." or.. "It's yours."
+
+---
+
+### Agent Evaluation v1.1
+
+Executive summary
+Mirroir.ai reframes e‑commerce from static, impersonal grids to intimate, identity‑forward scenes. The refined plan reduces compute via template‑first generation and wedges into luxury accessories where AOV, brand control, and aspiration justify a premium, QA’d experience. With modest conversion lifts, the economics are attractive; primary risks are brand approvals/quality and consistent photoreal personalization at scale.
+
+Problem and timing
+- Problem: Shoppers can’t see themselves owning products; brands waste traffic on linear, unpersonalized flows.
+- Why now: Visual AI, privacy‑safe embeddings, and brand asset pipelines make template‑driven personalization feasible. Luxury brands seek novel growth post‑ads plateau.
+
+Solution (refined)
+- Template‑first scenes (brand‑approved layers: background, lighting, product, occlusion) + localized personalization (wrist/hand/shoulder/neck) and post‑processing relight.
+- Identity‑forward UX: 3–5 hero scenes per SKU, intimate “one‑by‑one” browsing that fuses identity with product.
+- Category wedge: luxury accessories → constrained apparel → full apparel as pose/fit control matures.
+
+Target customers and value
+- Brands (primary): Conversion lift, ATC uplift, lower returns, PR buzz; premium, QA’d storytelling.
+- Consumers: Emotional resonance, representation, confidence; fewer, better choices.
+
+Business model and unit economics (illustrative)
+- Brand SaaS + credits + services. Example per brand: $5k SaaS + credits; compute ~$1.4k/mo for 30k previews/10.5k HD looks; GM > 70% before services.
+
+Feasibility and tech plan
+- 0–6 mo: pre‑rendered templates; high‑quality segmentation/matting; localized relight; preview→HD; identity caching.
+- 6–12 mo: scene packs; constrained apparel; limited cinemagraphs.
+- 24–36 mo: on‑device previews; 2.5D identity models; real‑time scene toggles.
+
+Luxury pilot plan highlights
+- Why luxury: high AOV, curated SKUs, brand control, identity value.
+- Targets: watches, fine jewelry, handbags, sunglasses, designer shoes.
+- Motion: co‑branded 3–5 hero scenes/SKU line; concierge onboarding; influencer seeding; strict brand QA (logo/color/material checks).
+- KPIs: preview→HD ≥ 35%; +12% ATC; +3–5% conversion uplift; −8–12% returns.
+
+Risks & mitigations
+- Quality: curated “golden poses,” better mattes, human QA at launch.
+- Brand approvals: pre‑approved kits, automated checks, “Brand Grade” thresholds.
+- Bias/representation: diverse templates; calibrated lighting.
+- Privacy: on‑device or encrypted embeddings; clear consent/deletion.
+- Cost control: template‑first workflow; cached previews; credits/quotas.
+
+Milestones and metrics (12 months)
+- 0–3 mo: 2 pilot brands; 10–15 templates/brand; consumer NPS ≥ 50.
+- 3–6 mo: 6–10 brands live; preview→HD ≥ 35%; +3% conversion uplift in tests.
+- 6–12 mo: 15–25 brands; −10% returns on eligible SKUs; NRR ≥ 120%.
+
+Financial outlook (illustrative)
+- Yr1: 8–12 brands → $1.2–$2.0M ARR (SaaS+credits) + $0.3–$0.8M services; GM 65–75%.
+- Yr2: 30–40 brands → $5–$8M ARR; GM improves as services mix declines.
+- Yr3: 75–100 brands → $15–$25M ARR; video/loops uplifts; platform margins expand.
+
+Verdict
+- Product‑market timing: Strong wedge in luxury accessories.
+- Feasibility: High for accessories via template‑first; apparel requires staged expansion.
+- Revenue potential: Attractive with brand SaaS + credits; rapid payback with modest lifts.
+- Go: Advance with 2–3 design‑partner pilots, prioritize QA/tooling, publish performance case studies.
+
+Action items (next 4–6 weeks)
+1) Identify and pitch 10 luxury brands across watches/jewelry/handbags; secure 2 pilot commitments.
+2) Produce 10–15 brand‑approved templates per pilot (3–5 hero scenes per flagship SKU line).
+3) Implement preview→HD pipeline with identity caching; set cost telemetry per render stage.
+4) Build “Brand Grade” QA checks (logo alignment, color/material tolerances, moiré, clipping) and dashboards.
+5) Define test design and KPIs with pilots (+ATC, conversion uplift, returns reduction) and plan for public case studies.
