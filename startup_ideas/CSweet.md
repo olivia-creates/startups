@@ -48,6 +48,17 @@ CSweet is a marketplace of AI superagents trained on the playbooks, frameworks, 
 
 Hire them by the hour, day, or project — no equity, no long contracts.
 
+**Partnered Thought‑Leader Model (MasterClass‑style supply)**
+We co‑build branded agents with recognized executives and institutions who already have brand, credibility, and followings. Like MasterClass used name recognition to lift ad performance and conversion, CSweet leverages executive and institutional brands to drive trust and distribution. Example: many companies would love to hire Imran Sayeed (MIT) but can’t afford his fees or add him to their board — they can “rent his brain” through his agent; the MIT association amplifies distribution and conversion.
+
+**Supply Strategy (Priority Targets)**
+* Seasoned executives with strong operator cred (e.g., ex‑FAANG VPs, Fortune 500 division heads)
+* Institution‑anchored thought leaders (MIT, Stanford, Wharton, INSEAD, Oxford)
+* Functional icons by domain (product, growth, finance, ops, brand)
+* Diversity of perspectives (industry, geography, background) for breadth and inclusivity
+
+
+
 **Imagine:**
 * Jeff Bezos-level operations strategy for your logistics in a single afternoon
 * Sheryl Sandberg-caliber scaling playbook tailored to your org in hours
@@ -170,6 +181,10 @@ Hire them by the hour, day, or project — no equity, no long contracts.
 * **Depth + Speed**: Combines strategic depth with instant availability
 * **Proven Frameworks**: Based on real executive decision-making patterns
 * **Network Effects**: More executives = more valuable platform
+* **Brand Advantage**: Branded agents carry an emotional wedge and market recognition that generic, nameless agents can’t match; they cut through agent inflation and build immediate trust
+* **Relationship Capital**: Our network and trusted relationships with thought leaders/executives is hard to replicate
+* **Extraction Tech/Process**: Proprietary interviews, data ingestion, and scenario testing to “smoothly extract the wisdom” at depth and with consent
+
 
 ---
 
@@ -186,6 +201,12 @@ Hire them by the hour, day, or project — no equity, no long contracts.
    * Starter: $500/month (10 hours included)
    * Growth: $2000/month (50 hours + priority access)
    * Enterprise: $10000/month (unlimited + custom agents)
+
+**Executive Revenue Share (by brand tier)**
+* Standard: 70/30 (platform/executive)
+* Premium (marquee names, institutional brands): 60/40 with marketing co-fund
+* Strategic Partner (anchor institutions): custom splits with minimum guarantees
+
 
 3. **Enterprise Licensing**
    * Custom-trained agents for internal use: $50K-500K setup
@@ -210,6 +231,9 @@ Hire them by the hour, day, or project — no equity, no long contracts.
 **Phase 1: Thought Leadership**
 * Executive partnerships announcement (PR blitz)
 * "AI meets C-suite" content series
+* MasterClass-style “Executive Editions”: co-branded landing pages and ads leveraging the executive’s brand to lift conversion
+* Institutional partners (e.g., MIT) as distribution amplifiers; credibility boosts paid performance
+
 * Speaking at startup/tech conferences
 * Podcast tour with participating executives
 
@@ -397,6 +421,8 @@ Hire them by the hour, day, or project — no equity, no long contracts.
 * **Hero**: "Get Jeff Bezos-level strategy advice. In minutes, not months."
 * **Sub-hero**: "AI superagents trained on the world's best executives. Available 24/7."
 * **CTA**: "Start Your Strategic Session"
+* **Background b‑roll**: Montage of us interviewing CEOs, CTOs, and seasoned executives — mics, notebooks, whiteboards — visually conveying the extraction process and the caliber of minds behind each agent
+
 
 **Value Propositions:**
 * **Speed**: "From months to minutes"
