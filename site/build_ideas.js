@@ -6,6 +6,7 @@ const path = require('path');
 
 const SRC = path.join(__dirname, '..', 'startup_ideas');
 const OUT = path.join(__dirname, 'ideas');
+const DATA_JS = path.join(__dirname, 'index.data.js');
 
 // Tiny markdown to HTML: handles headings, paragraphs, lists, code fences minimally
 function mdToHtml(md){
@@ -34,16 +35,30 @@ function layout(title, body){
 
 function ensureDir(p){ if(!fs.existsSync(p)) fs.mkdirSync(p, {recursive:true}); }
 
+function extractOneLiner(md){
+  const triple = md.match(/^###\s+\*\*\*(.*?)\*\*\*.*/m);
+  if (triple) return triple[1].trim();
+  const bold = md.match(/^###\s+\*\*(.*?)\*\*.*/m);
+  if (bold) return bold[1].trim();
+  const plain = md.match(/^###\s+(.*)/m);
+  if (plain) return plain[1].trim();
+  return 'Click to read more';
+}
+
 function main(){
   ensureDir(OUT);
   const files = fs.readdirSync(SRC).filter(f=>f.endsWith('.md'));
+  const index = [];
   for(const file of files){
     const title = path.basename(file, '.md');
     const md = fs.readFileSync(path.join(SRC, file), 'utf8');
     const body = mdToHtml(md);
     const html = layout(title, body);
     fs.writeFileSync(path.join(OUT, title+'.html'), html);
+    index.push({ title, slug: title, one_liner: extractOneLiner(md) });
   }
+  // data for index.html (works from file://)
+  fs.writeFileSync(DATA_JS, 'window.IDEAS = ' + JSON.stringify(index, null, 2) + ';\n');
   // write a tiny CSS
   fs.writeFileSync(path.join(__dirname,'style.css'), `body{font-family:Inter,system-ui,-apple-system,Segoe UI,Roboto,Helvetica,Arial,sans-serif;margin:0;background:#f7faf9;color:#1f2937}
   header{padding:24px 20px;background:#0f766e;color:white}
@@ -52,7 +67,7 @@ function main(){
   h2,h3{margin-top:24px}
   ul{padding-left:20px}
   `);
-  console.log('Built site/ideas/*.html');
+  console.log('Built site/ideas/*.html and index.data.js');
 }
 
 if (require.main === module) main();
