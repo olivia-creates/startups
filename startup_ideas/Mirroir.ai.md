@@ -1,6 +1,6 @@
 ---
 idea_name: Mirroir.ai
-idea_version: 1.1.0
+idea_version: 1.0.0
 template_name: startup_ideas_template
 template_version: 1.0.0
 last_updated: 2025-08-20

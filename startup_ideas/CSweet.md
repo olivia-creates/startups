@@ -56,12 +56,38 @@ We co‑build branded agents with recognized executives and institutions who alr
 * Institution‑anchored thought leaders (MIT, Stanford, Wharton, INSEAD, Oxford)
 * Functional icons by domain (product, growth, finance, ops, brand)
 * Diversity of perspectives (industry, geography, background) for breadth and inclusivity
+**Founding Cohort (Illustrative Targets)**
+- Mudassir Sheikha — Co-founder & CEO, Careem (rides, super app, ops scaling)
+- Sir Tim Clark — President, Emirates Airline (global aviation, network strategy)
+- Paul Griffiths — CEO, Dubai Airports (hub ops, capacity planning)
+- Sultan Ahmed bin Sulayem — Group Chairman & CEO, DP World (logistics, ports)
+- Mohamed Alabbar — Founder, Emaar & Noon (real estate + e‑commerce)
+- Huda Kattan — Founder, Huda Beauty (brand, DTC, creator distribution)
+- Noor Sweid — Founder & GP, Global Ventures (VC platform, portfolio support)
+**Executive-Side Value (their own agent)**
+Each partner executive receives a personal agent trained to think and work like them — to save time and automate their own workflow. Typical automations include inbox triage, meeting briefs, memo/deck first drafts, speech outlines, Q&A prep, and follow-ups, all in the executive’s voice and style. Controls include explicit approvals, redaction, and opt-in data ingestion for privacy.
+
+
+- Ola Doudin — Co-founder & CEO, BitOasis (fintech, regulatory navigation)
+- Elie Habib — Co-founder & CTO, Anghami (consumer media, growth in MENA)
+- Imran Sayeed — MIT (digital transformation, product/tech strategy)
+- Disrupt executives — portfolio platform, growth, and operating leaders
+
+Note: Names are illustrative targets for outreach; not implying partnerships.
+
+
+
+**Boardroom Agent (Advisor/Board integration)**
+Position a high‑value executive agent as a standing advisor or “virtual board member.” Companies get always‑on access to the agent for strategic questions, prep, and scenario reviews without calendar bottlenecks.
+
+**Human Approval Premium (AI + Human)**
+For key decisions, customers can request the actual human executive to review and approve the agent’s proposed plan. This blends AI speed with human credibility and accountability — an exclusive, premium workflow.
 
 
 
 **Imagine:**
-* Jeff Bezos-level operations strategy for your logistics in a single afternoon
-* Sheryl Sandberg-caliber scaling playbook tailored to your org in hours
+* Claire Hughes Johnson–style operating cadence and decision rhythm installed in a single afternoon
+* Casey Winters–caliber growth and scaling playbook tailored to your org in hours
 * A finance superbrain that thinks like a Fortune 50 CFO stress-testing your model overnight
 
 **Not a generic AI assistant.** Each CSweet agent is a distilled genius — trained to think, prioritize, and advise like the human it's modeled after.
