@@ -3,12 +3,13 @@
   <title>Bounty</title>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="../style.css" />
-  <style>.status-control{margin-left:auto}.status-control select{padding:6px 8px;border-radius:8px;border:1px solid #e5e7eb}</style>
+  <style>.status-control{margin-left:auto}.status-control select{padding:6px 8px;border-radius:8px;border:1px solid #e5e7eb}
+  @media (max-width: 520px){header{flex-wrap:wrap}.status-control{margin-left:0;width:100%}.status-control select{width:100%}}</style>
   </head><body><header style="display:flex;align-items:center;gap:12px"><a href="../index.html" style="color:white;text-decoration:none">← All ideas</a><h1 style="margin:0">Bounty</h1><div class="status-control"><select id="status-select" aria-label="Approval status">
     <option>In revision</option>
     <option>Validated</option>
     <option>Needs Adjustments</option>
-    <option>Rejected</option>
+    <option>Closed</option>
   </select></div></header>
   <main class="container"><p></p><p>
 <h1><strong>Love Bounty</strong></h1></p><p><h3>Put a price on love, and let the network deliver.</h3></p><p><hr/></p><p><h3>❌ 1. The Problem</h3></p><p><em> <strong>Swiping culture is broken:</strong> Dating apps reduce people to quick judgments, fostering superficiality, ghosting, and endless churn.
@@ -31,6 +32,7 @@
       if(found && found.status) initial = found.status;
     }
     if(initial === 'Need Adjusments') initial = 'Needs Adjustments';
+    if(initial === 'Rejected') initial = 'Closed';
     if(!initial) initial = 'In revision';
     select.value = initial;
     select.addEventListener('change', function(){ localStorage.setItem(key, this.value); });

@@ -3,12 +3,13 @@
   <title>Paperless</title>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="../style.css" />
-  <style>.status-control{margin-left:auto}.status-control select{padding:6px 8px;border-radius:8px;border:1px solid #e5e7eb}</style>
+  <style>.status-control{margin-left:auto}.status-control select{padding:6px 8px;border-radius:8px;border:1px solid #e5e7eb}
+  @media (max-width: 520px){header{flex-wrap:wrap}.status-control{margin-left:0;width:100%}.status-control select{width:100%}}</style>
   </head><body><header style="display:flex;align-items:center;gap:12px"><a href="../index.html" style="color:white;text-decoration:none">← All ideas</a><h1 style="margin:0">Paperless</h1><div class="status-control"><select id="status-select" aria-label="Approval status">
     <option>In revision</option>
     <option>Validated</option>
     <option>Needs Adjustments</option>
-    <option>Rejected</option>
+    <option>Closed</option>
   </select></div></header>
   <main class="container"><p><h2><strong>Paperless</strong></h2></p><p><em>Your receipts—smarter, greener, always with you.</em></p><p><hr/></p><p><h3>❌ The Problem</h3></p><p><em> <strong>Paper receipts are wasteful and unreliable</strong>: Over <strong>90% of receipts are trashed within the first week</strong>, creating clutter and frustration for customers.</p><p></em> In the U.S. alone, paper receipts account for <strong>686 million pounds of waste annually</strong>, consuming <strong>over 21 billion gallons of water</strong> and destroying <strong>millions of trees</strong>—while emitting billions of pounds of CO₂.</p><p><em> Receipts contain <strong>BPA/BPS</strong>, endocrine disruptors present in over 90% of thermal paper receipts—posing health risks.</p><p></em> <strong>Consumers want digital options</strong>: 86% of Americans wish retailers offered digital receipts, and losing physical receipts is a frequent frustration—people report losing or misplacing receipts <strong>five times a month on average</strong>.</p><p><hr/></p><p><h3>💡 The Insight</h3></p><p>Paper receipts are outdated: wasteful, inconvenient, and short-lived.  
  But receipts are also a key touchpoint—perfect for loyalty, expense tracking, and frictionless returns.  
@@ -25,6 +26,7 @@
       if(found && found.status) initial = found.status;
     }
     if(initial === 'Need Adjusments') initial = 'Needs Adjustments';
+    if(initial === 'Rejected') initial = 'Closed';
     if(!initial) initial = 'In revision';
     select.value = initial;
     select.addEventListener('change', function(){ localStorage.setItem(key, this.value); });

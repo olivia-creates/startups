@@ -91,12 +91,13 @@ function layout(title, body){
   <title>${title}</title>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="../style.css" />
-  <style>.status-control{margin-left:auto}.status-control select{padding:6px 8px;border-radius:8px;border:1px solid #e5e7eb}</style>
+  <style>.status-control{margin-left:auto}.status-control select{padding:6px 8px;border-radius:8px;border:1px solid #e5e7eb}
+  @media (max-width: 520px){header{flex-wrap:wrap}.status-control{margin-left:0;width:100%}.status-control select{width:100%}}</style>
   </head><body><header style="display:flex;align-items:center;gap:12px"><a href="../index.html" style="color:white;text-decoration:none">← All ideas</a><h1 style="margin:0">${title}</h1><div class="status-control"><select id="status-select" aria-label="Approval status">
     <option>In revision</option>
     <option>Validated</option>
     <option>Needs Adjustments</option>
-    <option>Rejected</option>
+    <option>Closed</option>
   </select></div></header>
   <main class="container">${body}</main>
   <script src="../index.data.js"></script>
@@ -110,6 +111,7 @@ function layout(title, body){
       if(found && found.status) initial = found.status;
     }
     if(initial === 'Need Adjusments') initial = 'Needs Adjustments';
+    if(initial === 'Rejected') initial = 'Closed';
     if(!initial) initial = 'In revision';
     select.value = initial;
     select.addEventListener('change', function(){ localStorage.setItem(key, this.value); });

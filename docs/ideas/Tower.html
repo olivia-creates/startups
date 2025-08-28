@@ -3,12 +3,13 @@
   <title>Tower</title>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="../style.css" />
-  <style>.status-control{margin-left:auto}.status-control select{padding:6px 8px;border-radius:8px;border:1px solid #e5e7eb}</style>
+  <style>.status-control{margin-left:auto}.status-control select{padding:6px 8px;border-radius:8px;border:1px solid #e5e7eb}
+  @media (max-width: 520px){header{flex-wrap:wrap}.status-control{margin-left:0;width:100%}.status-control select{width:100%}}</style>
   </head><body><header style="display:flex;align-items:center;gap:12px"><a href="../index.html" style="color:white;text-decoration:none">← All ideas</a><h1 style="margin:0">Tower</h1><div class="status-control"><select id="status-select" aria-label="Approval status">
     <option>In revision</option>
     <option>Validated</option>
     <option>Needs Adjustments</option>
-    <option>Rejected</option>
+    <option>Closed</option>
   </select></div></header>
   <main class="container"><p><h2><strong>Tower</strong></h2></p><p>Build faster, design smarter.</p><p>Where builders win. </p><p><hr/></p><p><h3>❌ The Problem</h3></p><p>Open-form conversational experiences in vibe coding platforms (like Lovable) often <strong>fail to create consistent, high-quality results</strong>.</p><p><em> They rely on the user’s freeform input, which can be vague, incomplete, or poorly worded.</p><p></em> This leads to <strong>misinterpretations, inconsistent outputs, wasted time and credits</strong>, and a frustrating back-and-forth process.</p><p><em> Without structure, even the best AI will default to following the messy, imprecise flow of human language — producing <strong>apps that don’t meet modern standards of design and coding excellence</strong>.</p><p></em> Most users are not natural product designers; they can’t translate their vision into precise technical instructions without guidance.</p><p><hr/></p><p><h3>💡 The Insight</h3></p><p>Random conversations rarely turn into structured, functional app plans.  
  But <strong>guided choices \+ human vision \+ structured UX</strong> \= faster, higher-quality outputs.  
@@ -26,6 +27,7 @@ Which type of aesthetics do you prefer? (Instead of going from scratch hoping th
       if(found && found.status) initial = found.status;
     }
     if(initial === 'Need Adjusments') initial = 'Needs Adjustments';
+    if(initial === 'Rejected') initial = 'Closed';
     if(!initial) initial = 'In revision';
     select.value = initial;
     select.addEventListener('change', function(){ localStorage.setItem(key, this.value); });

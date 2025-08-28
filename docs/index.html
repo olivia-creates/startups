@@ -41,8 +41,8 @@
         const card = document.createElement('div');
         card.className='card';
         const statHtml = idea.stat ? `<div class=\"stat\">${idea.stat}</div>` : '';
-        const status = idea.status || 'In revision';
-        const statusEmoji = status==='Validated' ? '✅' : status==='Rejected' ? '❌' : '✍️';
+        const status = (idea.status === 'Rejected') ? 'Closed' : (idea.status || 'In revision');
+        const statusEmoji = status==='Validated' ? '✅' : status==='Closed' ? '🚫' : status==='Needs Adjustments' ? '🛠️' : '✍️';
         const statusHtml = `<div class=\"status\">${statusEmoji} ${status}</div>`;
         card.innerHTML = `<h2>${idea.title}</h2>${statusHtml}<div class="pitch">${idea.one_liner}</div>${statHtml}<a class="btn" href="ideas/${idea.slug}.html">Open</a>`;
         grid.appendChild(card);

@@ -3,12 +3,13 @@
   <title>Flagstone</title>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="../style.css" />
-  <style>.status-control{margin-left:auto}.status-control select{padding:6px 8px;border-radius:8px;border:1px solid #e5e7eb}</style>
+  <style>.status-control{margin-left:auto}.status-control select{padding:6px 8px;border-radius:8px;border:1px solid #e5e7eb}
+  @media (max-width: 520px){header{flex-wrap:wrap}.status-control{margin-left:0;width:100%}.status-control select{width:100%}}</style>
   </head><body><header style="display:flex;align-items:center;gap:12px"><a href="../index.html" style="color:white;text-decoration:none">← All ideas</a><h1 style="margin:0">Flagstone</h1><div class="status-control"><select id="status-select" aria-label="Approval status">
     <option>In revision</option>
     <option>Validated</option>
     <option>Needs Adjustments</option>
-    <option>Rejected</option>
+    <option>Closed</option>
   </select></div></header>
   <main class="container"><p></p><p>
 <h2><strong>🌍 Flagstone (or Conquest / GlobalGem)</strong></h2></p><p><em>See the world’s opportunities, not just its listings.</em></p><p><hr/></p><p><h3>❌ The Problem</h3></p><p><em> Real estate sites today are <strong>purely transactional</strong>: photos, price, neighborhood, maybe comps.</p><p></em> But investors want <strong>context</strong>:</p><p>  <em> Is this city growing in population?</p><p>  </em> Are new railways, airports, or policies boosting its value?</p><p>  <em> What’s the climate risk, rental demand, and economic outlook?</p><p></em> Without this context, investors rely on brokers with conflicts of interest or spend <strong>months researching markets manually</strong>.</p><p><em> Entry barriers are high: to invest in property abroad, you often need <strong>hundreds of thousands of dollars</strong> and layers of legal help.</p><p><hr/></p><p><h3>💡 The Insight</h3></p><p>Investment isn’t just about a house—it’s about the <strong>story around it</strong>.
@@ -25,6 +26,7 @@
       if(found && found.status) initial = found.status;
     }
     if(initial === 'Need Adjusments') initial = 'Needs Adjustments';
+    if(initial === 'Rejected') initial = 'Closed';
     if(!initial) initial = 'In revision';
     select.value = initial;
     select.addEventListener('change', function(){ localStorage.setItem(key, this.value); });
