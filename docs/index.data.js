@@ -21,17 +21,17 @@ window.IDEAS = [
     "status": "In revision"
   },
   {
-    "title": "Dilnoor",
-    "slug": "Dilnoor",
-    "one_liner": "Light for your heart’s health — phone PPG + doctor‑guided advice for South Asians.",
-    "stat": "South Asians hit heart disease 5–10 years earlier",
-    "status": "In revision"
-  },
-  {
     "title": "DisruptOpenMarketplace",
     "slug": "DisruptOpenMarketplace",
     "one_liner": "Turn VC ecosystems into distributed sales — unleash alumni and fans with instant affiliate kits.",
     "stat": "$50B+ affiliate market — now for portfolio companies",
+    "status": "In revision"
+  },
+  {
+    "title": "Dropin",
+    "slug": "Dropin",
+    "one_liner": "Turn every café into a co‑working space — buy time with drinks or micro‑payments.",
+    "stat": "23% of U.S. employees work remotely — cafés can monetize",
     "status": "In revision"
   },
   {
@@ -84,13 +84,6 @@ window.IDEAS = [
     "status": "In revision"
   },
   {
-    "title": "Passworld",
-    "slug": "Passworld",
-    "one_liner": "Turn every café into a co‑working space — buy time with drinks or micro‑payments.",
-    "stat": "23% of U.S. employees work remotely — cafés can monetize",
-    "status": "In revision"
-  },
-  {
     "title": "RealDeal",
     "slug": "RealDeal",
     "one_liner": "Referral links for everything — track intros, split rewards, and make your network pay.",
@@ -110,5 +103,12 @@ window.IDEAS = [
     "one_liner": "Get returns on your rent — tenant equity that compounds while you live.",
     "stat": "Turn rent into 1–3% equity back",
     "status": "Rejected"
+  },
+  {
+    "title": "Zinda",
+    "slug": "Zinda",
+    "one_liner": "Light for your heart’s health — phone PPG + doctor‑guided advice for South Asians.",
+    "stat": "South Asians hit heart disease 5–10 years earlier",
+    "status": "In revision"
   }
 ];
