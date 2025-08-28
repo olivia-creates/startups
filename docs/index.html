@@ -1,0 +1,54 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Startup Seeds 🌱</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
+    body{font-family:Inter,system-ui,-apple-system,Segoe UI,Roboto,Helvetica,Arial,sans-serif;margin:0;background:#faf7ff;color:#1a102b}
+    header{padding:28px 20px;background:#5B21B6;color:white}
+    h1{margin:0;font-size:30px}
+    .grid{display:grid;gap:20px;padding:20px;grid-template-columns:repeat(auto-fill,minmax(340px,1fr))}
+    .card{background:white;border-radius:14px;padding:18px;border:1px solid #e5e7eb;box-shadow:0 2px 6px rgba(0,0,0,.06)}
+    .card h2{margin:0 0 8px;font-size:20px}
+    .card .pitch{margin:6px 0 10px;color:#1a102b}
+    .card .stat{color:#6b7280}
+    .status{font-size:12px;color:#6b7280;margin-bottom:8px}
+    .btn{display:inline-block;background:#5B21B6;color:white;padding:8px 12px;border-radius:8px;text-decoration:none}
+    footer{padding:20px;color:#6b7280;text-align:center}
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Startup Seeds 🌱</h1>
+    <p>Repertory of Olivia's ideas to validate and soon, scale 🚀</p>
+  </header>
+  <!-- Tabs intentionally removed for cleaner look -->
+  <main class="grid" id="grid"></main>
+  <footer>Generated locally — run <code>node site/build_ideas.js</code> to refresh.</footer>
+  <script src="index.data.js"></script>
+  <script>
+    (function(){
+      const ideas = (window.IDEAS || []);
+      const grid = document.getElementById('grid');
+      if(!ideas.length){
+        grid.innerHTML = '<div class="card"><h2>No ideas found</h2><p>Run: <code>node site/build_ideas.js</code></p></div>';
+        return;
+      }
+      for(const idea of ideas){
+        const card = document.createElement('div');
+        card.className='card';
+        const statHtml = idea.stat ? `<div class=\"stat\">${idea.stat}</div>` : '';
+        const status = idea.status || 'In revision';
+        const statusEmoji = status==='Validated' ? '✅' : status==='Rejected' ? '❌' : '✍️';
+        const statusHtml = `<div class=\"status\">${statusEmoji} ${status}</div>`;
+        card.innerHTML = `<h2>${idea.title}</h2>${statusHtml}<div class="pitch">${idea.one_liner}</div>${statHtml}<a class="btn" href="ideas/${idea.slug}.html">Open</a>`;
+        grid.appendChild(card);
+      }
+    })();
+  </script>
+</body>
+</html>
+
