@@ -1,0 +1,59 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Startup Ideas</title>
+  <style>
+    body{font-family:Inter,system-ui,-apple-system,Segoe UI,Roboto,Helvetica,Arial,sans-serif;margin:0;background:#f7faf9;color:#1f2937}
+    header{padding:24px 20px;background:#0f766e;color:white}
+    h1{margin:0;font-size:28px}
+    .grid{display:grid;gap:16px;padding:20px;grid-template-columns:repeat(auto-fill,minmax(280px,1fr))}
+    .card{background:white;border-radius:12px;padding:16px;border:1px solid #e5e7eb;box-shadow:0 1px 3px rgba(0,0,0,.06)}
+    .card h2{margin:0 0 8px;font-size:18px}
+    .card p{margin:0 0 12px;color:#6b7280}
+    .btn{display:inline-block;background:#0f766e;color:white;padding:8px 12px;border-radius:8px;text-decoration:none}
+    footer{padding:20px;color:#6b7280;text-align:center}
+    .tabs{display:flex;gap:8px;flex-wrap:wrap;padding:0 20px 12px}
+    .tab{background:#e6f4f1;border:1px solid #cce9e2;color:#0f766e;border-radius:16px;padding:6px 10px;text-decoration:none}
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Aude’s Startup Ideas</h1>
+    <p>Quick, lovable index — click any idea to view the full description.</p>
+  </header>
+  <nav class="tabs" id="tabs"></nav>
+  <main class="grid" id="grid"></main>
+  <footer>Generated locally — edit site/ideas.json to add/remove ideas.</footer>
+  <script>
+    async function load(){
+      const res = await fetch('ideas.json');
+      const ideas = await res.json();
+      const tabs = document.getElementById('tabs');
+      const grid = document.getElementById('grid');
+      for(const idea of ideas){
+        const tab = document.createElement('a');
+        tab.className='tab';
+        tab.href = 'ideas/' + idea.file.replace(/\.md$/,'') + '.html';
+        tab.textContent = idea.title;
+        tabs.appendChild(tab);
+      }
+      // Create cards with one-liners by reading markdown frontmatter and first subtitle
+      for(const idea of ideas){
+        const mdPath = '../startup_ideas/' + idea.file; // assuming you open index.html from site/
+        const resp = await fetch(mdPath);
+        const md = await resp.text();
+        const oneLinerMatch = md.match(/### \*\*\*(.+)\*\*\*/); // first H3 line often used as tagline
+        const oneLiner = oneLinerMatch ? oneLinerMatch[1].trim() : 'Click to read more';
+        const card = document.createElement('div');
+        card.className='card';
+        card.innerHTML = `<h2>${idea.title}</h2><p>${oneLiner}</p><a class="btn" href="ideas/${idea.file.replace(/\.md$/,'')}.html">Open</a>`;
+        grid.appendChild(card);
+      }
+    }
+    load();
+  </script>
+</body>
+</html>
+
