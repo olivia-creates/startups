@@ -105,7 +105,7 @@ window.IDEAS = [
     "status": "Rejected"
   },
   {
-    "title": "Zinda",
+    "title": "Zinda (Ali's idea)",
     "slug": "Zinda",
     "one_liner": "Light for your heart’s health — phone PPG + doctor‑guided advice for South Asians.",
     "stat": "South Asians hit heart disease 5–10 years earlier",

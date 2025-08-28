@@ -2,7 +2,7 @@
   "Bounty": {"one": "Put a price on love — turn your network into matchmakers and pay only when love lands.", "stat": "$5k–$100k: what elite matchmakers charge today", "status": "Validated"},
   "CSweet": {"one": "Hire the minds of the world's best executives — distilled into on‑demand AI superagents.", "stat": "$15.6M: avg Fortune 500 CEO comp — now in your corner by the hour"},
   "CityByDesign": {"one": "Blueprint local prosperity with data‑driven city playbooks anyone can execute.", "stat": "From policy to projects: turn datasets into growth in weeks"},
-  "Zinda": {"one": "Light for your heart’s health — phone PPG + doctor‑guided advice for South Asians.", "stat": "South Asians hit heart disease 5–10 years earlier", "status": "In revision"},
+  "Zinda": {"one": "Light for your heart’s health — phone PPG + doctor‑guided advice for South Asians.", "stat": "South Asians hit heart disease 5–10 years earlier", "status": "In revision", "display_title": "Zinda (Ali's idea)"},
   "DisruptOpenMarketplace": {"one": "Turn VC ecosystems into distributed sales — unleash alumni and fans with instant affiliate kits.", "stat": "$50B+ affiliate market — now for portfolio companies"},
   "Feast": {"one": "Follow virtual creators that never burn out — engagement‑trained feeds that actually grow you.", "stat": "AI icons post 24/7; your feedback trains the feed", "status": "In revision"},
   "Flagstone": {"one": "See the world’s opportunities, not just listings — context layers + fractional co‑investing.", "stat": "Invest with conviction: macro, policy, climate — mapped", "status": "In revision"},

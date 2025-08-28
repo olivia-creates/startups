@@ -179,17 +179,17 @@ function main(){
   for(const file of files){
     const title = path.basename(file, '.md');
     const md = fs.readFileSync(path.join(SRC, file), 'utf8');
-    const body = mdToHtml(md);
-    const html = layout(title, body);
-    fs.writeFileSync(path.join(OUT, title+'.html'), html);
     const auto = extractOneLiner(md);
+    const body = mdToHtml(md);
     const raw = overrides[title];
-    let one = auto; let stat = ''; let status = 'In revision';
+    let one = auto; let stat = ''; let status = 'In revision'; let display = title;
     if (raw){
       if (typeof raw === 'string') { one = raw; }
-      else { one = raw.one || raw.one_liner || auto; stat = raw.stat || ''; status = raw.status || status; }
+      else { one = raw.one || raw.one_liner || auto; stat = raw.stat || ''; status = raw.status || status; display = raw.display_title || title; }
     }
-    index.push({ title, slug: title, one_liner: one, stat, status });
+    const html = layout(display, body);
+    fs.writeFileSync(path.join(OUT, title+'.html'), html);
+    index.push({ title: display, slug: title, one_liner: one, stat, status });
   }
   // data for index.html (works from file://)
   fs.writeFileSync(DATA_JS, 'window.IDEAS = ' + JSON.stringify(index, null, 2) + ';\n');
