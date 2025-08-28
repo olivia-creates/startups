@@ -7,7 +7,7 @@
   </head><body><header style="display:flex;align-items:center;gap:12px"><a href="../index.html" style="color:white;text-decoration:none">← All ideas</a><h1 style="margin:0">Haven</h1><div class="status-control"><select id="status-select" aria-label="Approval status">
     <option>In revision</option>
     <option>Validated</option>
-    <option>Need Adjusments</option>
+    <option>Needs Adjustments</option>
     <option>Rejected</option>
   </select></div></header>
   <main class="container"><p><h1>💘 Haven</h1></p><p>"Love works in the background, so you don’t have to."</p><p><hr/></p><p><h3>❌ The Problem</h3></p><p>Dating apps are noisy, shallow, and exhausting:</p><p> Endless swiping & ghosting → low success rates.</p><p> Busy professionals feel unsafe, burned out, and disillusioned.</p><p> Matchmakers charge $10k–$50k+ but still have limited networks.</p><p> Time wasted on repetitive “getting-to-know-you” convos that go nowhere.</p><p><hr/></p><p><h3>💡 The Insight</h3></p><p>People don’t want more convos, they want qualified matches.  
@@ -22,6 +22,7 @@
       var found = (window.IDEAS||[]).find(function(i){ return i.title===title; });
       if(found && found.status) initial = found.status;
     }
+    if(initial === 'Need Adjusments') initial = 'Needs Adjustments';
     if(!initial) initial = 'In revision';
     select.value = initial;
     select.addEventListener('change', function(){ localStorage.setItem(key, this.value); });

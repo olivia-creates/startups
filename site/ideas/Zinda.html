@@ -7,7 +7,7 @@
   </head><body><header style="display:flex;align-items:center;gap:12px"><a href="../index.html" style="color:white;text-decoration:none">← All ideas</a><h1 style="margin:0">Zinda</h1><div class="status-control"><select id="status-select" aria-label="Approval status">
     <option>In revision</option>
     <option>Validated</option>
-    <option>Need Adjusments</option>
+    <option>Needs Adjustments</option>
     <option>Rejected</option>
   </select></div></header>
   <main class="container"><p></p><p>
@@ -105,6 +105,7 @@
       var found = (window.IDEAS||[]).find(function(i){ return i.title===title; });
       if(found && found.status) initial = found.status;
     }
+    if(initial === 'Need Adjusments') initial = 'Needs Adjustments';
     if(!initial) initial = 'In revision';
     select.value = initial;
     select.addEventListener('change', function(){ localStorage.setItem(key, this.value); });

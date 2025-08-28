@@ -7,7 +7,7 @@
   </head><body><header style="display:flex;align-items:center;gap:12px"><a href="../index.html" style="color:white;text-decoration:none">← All ideas</a><h1 style="margin:0">Paperless</h1><div class="status-control"><select id="status-select" aria-label="Approval status">
     <option>In revision</option>
     <option>Validated</option>
-    <option>Need Adjusments</option>
+    <option>Needs Adjustments</option>
     <option>Rejected</option>
   </select></div></header>
   <main class="container"><p><h2>Mobill</h2></p><p>Your receipts—smarter, greener, always with you.</p><p><hr/></p><p><h3>❌ The Problem</h3></p><p> Paper receipts are wasteful and unreliable: Over 90% of receipts are trashed within the first week, creating clutter and frustration for customers.</p><p> In the U.S. alone, paper receipts account for 686 million pounds of waste annually, consuming over 21 billion gallons of water and destroying millions of trees—while emitting billions of pounds of CO₂.</p><p> Receipts contain BPA/BPS, endocrine disruptors present in over 90% of thermal paper receipts—posing health risks.</p><p> Consumers want digital options: 86% of Americans wish retailers offered digital receipts, and losing physical receipts is a frequent frustration—people report losing or misplacing receipts five times a month on average.</p><p><hr/></p><p><h3>💡 The Insight</h3></p><p>Paper receipts are outdated: wasteful, inconvenient, and short-lived.  
@@ -24,6 +24,7 @@
       var found = (window.IDEAS||[]).find(function(i){ return i.title===title; });
       if(found && found.status) initial = found.status;
     }
+    if(initial === 'Need Adjusments') initial = 'Needs Adjustments';
     if(!initial) initial = 'In revision';
     select.value = initial;
     select.addEventListener('change', function(){ localStorage.setItem(key, this.value); });
