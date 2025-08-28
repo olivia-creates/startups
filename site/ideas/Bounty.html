@@ -3,7 +3,13 @@
   <title>Bounty</title>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="../style.css" />
-  </head><body><header><a href="../index.html" style="color:white;text-decoration:none">← All ideas</a><h1>Bounty</h1></header>
+  <style>.status-control{margin-left:auto}.status-control select{padding:6px 8px;border-radius:8px;border:1px solid #e5e7eb}</style>
+  </head><body><header style="display:flex;align-items:center;gap:12px"><a href="../index.html" style="color:white;text-decoration:none">← All ideas</a><h1 style="margin:0">Bounty</h1><div class="status-control"><select id="status-select" aria-label="Approval status">
+    <option>In revision</option>
+    <option>Validated</option>
+    <option>Need Adjusments</option>
+    <option>Rejected</option>
+  </select></div></header>
   <main class="container"><p></p><p>
 <h1>Love Bounty</h1></p><p><h3>Put a price on love, and let the network deliver.</h3></p><p><hr/></p><p><h3>❌ 1. The Problem</h3></p><p> Swiping culture is broken: Dating apps reduce people to quick judgments, fostering superficiality, ghosting, and endless churn.
  Expensive alternatives are out of reach: Elite matchmakers charge $10K–$100K+ for curated introductions — far beyond the reach of most singles.
@@ -14,4 +20,18 @@
 3) Control anonymity (blurred photos, partial bio, or open)
 4) The hunt begins: network submits potential matches; higher bounties unlock more reach</p><p><hr/>
 5. Winning match, winning payout → If a match works (defined by milestones like verified date, exclusivity, relationship length), the bounty is paid to the matchmaker.</p><p>For users:</p><p> Singles get a serious pool of curated intros with skin in the game.</p><p> Friends & connectors get rewarded for setting people up successfully.</p><p><hr/></p><p><h3>🔥 Why It Works</h3></p><p> Skin in the game: Money signals intent. Bounties attract serious matches, not casual swipes.</p><p> Network effects: Instead of one matchmaker, you get hundreds.</p><p> Democratizes access: High-quality matchmaking without the $20K+ gatekeeping.</p><p> Engages communities: Friends, coworkers, even strangers can become connectors — spreading reach exponentially.</p><p> Shared success: Both sides win when love wins.</p><p><hr/></p><p><h3>🌍 Market Opportunity</h3></p><p> Dating apps: $8B+ global market (Match Group alone valued at $45B).</p><p> Matchmaking industry: Tens of thousands of matchmakers charging $5K–$100K for elite services, with limited reach.</p><p> Loneliness economy: U.S. Surgeon General declared loneliness an epidemic; people are actively investing in connection and relationships.</p><p>Love Bounty sits at the intersection of dating apps and matchmaking — blending the scalability of platforms with the quality of curated intros.</p><p><hr/></p><p><h3>💰 Business Model</h3></p><p> Transaction fee: % cut of every bounty paid out (e.g., 15–20%).</p><p> Premium tiers: Pay more to set higher bounties, unlock more match submissions, or get priority placement.</p><p> Verification services: Paid ID checks, profile validation, and milestone tracking for match payouts.</p><p> Enterprise / Concierge: White-glove services for higher bounties, with coaching \+ relationship experts bundled in.</p><p><hr/></p><p><h3>⚙️ Implementation Strategy</h3></p><p>1. MVP launch: Simple web app where singles post bounties \+ basic matchmaking flow.</p><p>2. Trust layer: Add verified profiles, escrow system for bounties, and milestone-based payouts.</p><p>3. Community building: Seed with influencers, “super-connectors,” and dating coaches as bounty hunters.</p><p>4. Scale: Build mobile app with gamified leaderboard of top matchmakers.</p><p><hr/></p><p><h3>⏳ Why Now</h3></p><p> Swiping fatigue is at its peak; millions crave depth, not dopamine hits.</p><p> Matchmaking is trending upward, but underserved for the mid-market.</p><p>* The idea of bounties \+ marketplaces is proven in gig economy (Upwork, Fiverr, TaskRabbit) — Love Bounty applies it to the most valuable market of all: relationships.</p><p></p></main>
+  <script src="../index.data.js"></script>
+  <script>(function(){
+    var title = "Bounty";
+    var key = 'ideaStatus:'+title;
+    var select = document.getElementById('status-select');
+    var initial = localStorage.getItem(key);
+    if(!initial && window.IDEAS){
+      var found = (window.IDEAS||[]).find(function(i){ return i.title===title; });
+      if(found && found.status) initial = found.status;
+    }
+    if(!initial) initial = 'In revision';
+    select.value = initial;
+    select.addEventListener('change', function(){ localStorage.setItem(key, this.value); });
+  })();</script>
   </body></html>

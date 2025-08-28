@@ -3,7 +3,13 @@
   <title>DisruptOpenMarketplace</title>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="../style.css" />
-  </head><body><header><a href="../index.html" style="color:white;text-decoration:none">← All ideas</a><h1>DisruptOpenMarketplace</h1></header>
+  <style>.status-control{margin-left:auto}.status-control select{padding:6px 8px;border-radius:8px;border:1px solid #e5e7eb}</style>
+  </head><body><header style="display:flex;align-items:center;gap:12px"><a href="../index.html" style="color:white;text-decoration:none">← All ideas</a><h1 style="margin:0">DisruptOpenMarketplace</h1><div class="status-control"><select id="status-select" aria-label="Approval status">
+    <option>In revision</option>
+    <option>Validated</option>
+    <option>Need Adjusments</option>
+    <option>Rejected</option>
+  </select></div></header>
   <main class="container"><p></p><p><h1>🏗️ Disrupt Open Marketplace</h1></p><p><h3>❌ 1. The Problem</h3></p><p>Portfolio companies within VC ecosystems struggle with distribution and sales, especially as they face workforce reductions. Talented employees are being let go despite having valuable networks and existing expertise of the products, brands, and goodwill towards the company. Meanwhile, companies have great products but limited reach to potential customers. The traditional approach of maintaining large sales teams is becoming increasingly expensive and unsustainable.</p><p><h3>💡 2. The Insight</h3></p><p>The rise of individual content creators and personal brands creates an untapped opportunity. Former employees and ecosystem participants have networks and credibility that could be leveraged for product distribution. Instead of viewing workforce reductions as purely negative, we can transform them into distributed sales opportunities with win-win revenue sharing.</p><p><h3>🚀 3. The Solution</h3></p><p>An open marketplace platform specifically for VC portfolio companies that enables:
 <li>Ridiculously simple affiliate link creation with pre-determined revenue share percentages to streamline "influencer" deal creation</li>
 <li>Marketing asset libraries for each product (pitch decks, copy, visuals, testimonials)</li>
@@ -81,4 +87,18 @@ Phase 3: Open platform to other VC ecosystems and strategic company partnerships
 <li>"From layoffs to lift-off: Transform workforce challenges into distributed growth opportunities"</li>
 <li>"Every connection in your network is a potential customer waiting to be reached"</li>
 <li>"Simple tools, serious results: Professional-grade affiliate marketing made effortless"</li></p></main>
+  <script src="../index.data.js"></script>
+  <script>(function(){
+    var title = "DisruptOpenMarketplace";
+    var key = 'ideaStatus:'+title;
+    var select = document.getElementById('status-select');
+    var initial = localStorage.getItem(key);
+    if(!initial && window.IDEAS){
+      var found = (window.IDEAS||[]).find(function(i){ return i.title===title; });
+      if(found && found.status) initial = found.status;
+    }
+    if(!initial) initial = 'In revision';
+    select.value = initial;
+    select.addEventListener('change', function(){ localStorage.setItem(key, this.value); });
+  })();</script>
   </body></html>

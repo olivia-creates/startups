@@ -3,7 +3,13 @@
   <title>RealDeal</title>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="../style.css" />
-  </head><body><header><a href="../index.html" style="color:white;text-decoration:none">← All ideas</a><h1>RealDeal</h1></header>
+  <style>.status-control{margin-left:auto}.status-control select{padding:6px 8px;border-radius:8px;border:1px solid #e5e7eb}</style>
+  </head><body><header style="display:flex;align-items:center;gap:12px"><a href="../index.html" style="color:white;text-decoration:none">← All ideas</a><h1 style="margin:0">RealDeal</h1><div class="status-control"><select id="status-select" aria-label="Approval status">
+    <option>In revision</option>
+    <option>Validated</option>
+    <option>Need Adjusments</option>
+    <option>Rejected</option>
+  </select></div></header>
   <main class="container"><p></p><p>
 RealDeal
  Sell what you love, earn as you go.</p><p><hr/></p><p>❌ The Problem
@@ -13,4 +19,18 @@ RealDeal
  RealDeal is the plug-and-play affiliate marketplace where anyone can share any product and get paid when it sells — instantly, transparently, and without friction.</p><p> Post any page or product you love</p><p> RealDeal generates a referral link</p><p> The product owner gets notified, sets terms (or auto-approves), and agrees on commission</p><p> You share it, your audience buys, you both win — no manual chasing or messy contracts</p><p>Imagine:</p><p> A YouTuber linking to a coffee brand mid-video — deal accepted in minutes</p><p> A blogger dropping a boutique candle link — payment triggers the moment a sale clears</p><p> A TikToker featuring a skincare set — business and creator meet without cold DMs or applications</p><p><hr/></p><p>✨ Why It Works</p><p> Democratizes affiliate marketing for everyone, not just influencers with big platforms</p><p> Turns every content share into a potential revenue stream</p><p> Gives businesses instant access to a decentralized, motivated salesforce</p><p> Rewards authentic promotion over interruptive ads</p><p> Automated, no admin headaches for either side</p><p><hr/></p><p>📊 Market Opportunity</p><p> $17B+ global affiliate marketing industry, growing 10%+ annually</p><p> Influencer and creator economy surpassing $250B by 2030</p><p> Rising ad fatigue driving brands toward performance-based partnerships</p><p><hr/></p><p>💰 Business Model</p><p> % commission on all sales processed through RealDeal</p><p> Premium analytics & CRM tools for businesses</p><p> Subscription tiers for high-volume creators and brands</p><p><hr/></p><p>⏳ Why Now
  Social platforms are flooded with content but monetization remains clumsy and fragmented. At the same time, brands need fresh, authentic distribution as ad channels crumble. RealDeal bridges the gap — automating trust, tracking, and payment so growth feels effortless.</p><p><hr/></p><p>🎯 Tagline
  “RealDeal — Share what you love. Get paid when it sells.”</p><p></p></main>
+  <script src="../index.data.js"></script>
+  <script>(function(){
+    var title = "RealDeal";
+    var key = 'ideaStatus:'+title;
+    var select = document.getElementById('status-select');
+    var initial = localStorage.getItem(key);
+    if(!initial && window.IDEAS){
+      var found = (window.IDEAS||[]).find(function(i){ return i.title===title; });
+      if(found && found.status) initial = found.status;
+    }
+    if(!initial) initial = 'In revision';
+    select.value = initial;
+    select.addEventListener('change', function(){ localStorage.setItem(key, this.value); });
+  })();</script>
   </body></html>

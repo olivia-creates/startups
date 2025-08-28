@@ -3,7 +3,13 @@
   <title>NewWork</title>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="../style.css" />
-  </head><body><header><a href="../index.html" style="color:white;text-decoration:none">← All ideas</a><h1>NewWork</h1></header>
+  <style>.status-control{margin-left:auto}.status-control select{padding:6px 8px;border-radius:8px;border:1px solid #e5e7eb}</style>
+  </head><body><header style="display:flex;align-items:center;gap:12px"><a href="../index.html" style="color:white;text-decoration:none">← All ideas</a><h1 style="margin:0">NewWork</h1><div class="status-control"><select id="status-select" aria-label="Approval status">
+    <option>In revision</option>
+    <option>Validated</option>
+    <option>Need Adjusments</option>
+    <option>Rejected</option>
+  </select></div></header>
   <main class="container"><p>NewWork  
  Work at the speed of AI.</p><p><hr/></p><p>❌ The Problem  
  AI is great at doing, but humans still need to guide, approve, and refine its thinking.  
@@ -14,4 +20,18 @@
 Imagine:</p><p> Approving the perfect client reply in seconds while commuting</p><p> AI auto-sending the right onboarding doc without asking — because it learned from you</p><p> Watching your dashboard turn green as efficiency climbs and tasks vanish</p><p><hr/></p><p>🔥 Why It Works</p><p> Turns approvals and refinements into an addictive, swipe-based experience</p><p> Builds a trust loop: the more you guide AI, the smarter it gets</p><p> Visual workflow mapping \+ pattern detection kills repetitive work</p><p> Voice-first design supports mobility and flow</p><p> Gamification keeps engagement high and adoption sticky</p><p><hr/></p><p>🌍 Market Opportunity</p><p> $16B+ global productivity software market, growing fast with AI integration</p><p> Enterprises seeking to maximize ROI from AI tools by increasing human adoption</p><p> Knowledge workers spend 20–40% of their day on repetitive approvals and process work</p><p><hr/></p><p>💰 Business Model</p><p> Subscription SaaS for individuals and teams</p><p> Enterprise licensing with custom AI agent training</p><p> Marketplace for workflow templates and productivity “skins”</p><p><hr/></p><p>⏳ Why Now  
  AI has outpaced our ability to integrate it fluidly into human work. Tools today either automate too much (risking trust) or too little (wasting time). NewWork strikes the balance, making human guidance fun, fast, and freeing.</p><p><hr/></p><p>✨ Tagline  
  “NewWork — Love the way you work.”</p><p></p></main>
+  <script src="../index.data.js"></script>
+  <script>(function(){
+    var title = "NewWork";
+    var key = 'ideaStatus:'+title;
+    var select = document.getElementById('status-select');
+    var initial = localStorage.getItem(key);
+    if(!initial && window.IDEAS){
+      var found = (window.IDEAS||[]).find(function(i){ return i.title===title; });
+      if(found && found.status) initial = found.status;
+    }
+    if(!initial) initial = 'In revision';
+    select.value = initial;
+    select.addEventListener('change', function(){ localStorage.setItem(key, this.value); });
+  })();</script>
   </body></html>

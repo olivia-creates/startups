@@ -3,7 +3,13 @@
   <title>Mirroir.ai</title>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="../style.css" />
-  </head><body><header><a href="../index.html" style="color:white;text-decoration:none">← All ideas</a><h1>Mirroir.ai</h1></header>
+  <style>.status-control{margin-left:auto}.status-control select{padding:6px 8px;border-radius:8px;border:1px solid #e5e7eb}</style>
+  </head><body><header style="display:flex;align-items:center;gap:12px"><a href="../index.html" style="color:white;text-decoration:none">← All ideas</a><h1 style="margin:0">Mirroir.ai</h1><div class="status-control"><select id="status-select" aria-label="Approval status">
+    <option>In revision</option>
+    <option>Validated</option>
+    <option>Need Adjusments</option>
+    <option>Rejected</option>
+  </select></div></header>
   <main class="container"><p></p><p>
 <h1>Mirroir.ai</h1></p><p><h3>See it. Feel it. Own it.</h3></p><p><hr/></p><p><h3>❌ 1. The Problem</h3></p><p>E-commerce today is detached and impersonal. Shoppers scroll past generic product photos of models who don't look like them, in settings they can't relate to. These images don't always inspire, and they don't convert. There's no emotional connection — no sense of ownership.</p><p>Proof points:
  70% of online fashion purchases are returned due to fit/style issues
@@ -271,4 +277,18 @@ Mirroir.ai reframes e‑commerce from static, impersonal grids to intimate, iden
 4) Build “Brand Grade” QA checks (logo alignment, color/material tolerances, moiré, clipping) and dashboards.
 5) Define test design and KPIs with pilots (+ATC, conversion uplift, returns reduction) and plan for public case studies.
 </p></main>
+  <script src="../index.data.js"></script>
+  <script>(function(){
+    var title = "Mirroir.ai";
+    var key = 'ideaStatus:'+title;
+    var select = document.getElementById('status-select');
+    var initial = localStorage.getItem(key);
+    if(!initial && window.IDEAS){
+      var found = (window.IDEAS||[]).find(function(i){ return i.title===title; });
+      if(found && found.status) initial = found.status;
+    }
+    if(!initial) initial = 'In revision';
+    select.value = initial;
+    select.addEventListener('change', function(){ localStorage.setItem(key, this.value); });
+  })();</script>
   </body></html>
