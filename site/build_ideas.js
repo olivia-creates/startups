@@ -21,6 +21,8 @@ function stripFrontMatter(md){
 // Tiny markdown to HTML (preview mode): remove raw ** and ##, convert main structures
 function mdToHtml(md){
   md = stripFrontMatter(md);
+  // Remove boilerplate template/version meta lines in blockquotes
+  md = md.replace(/^\s*>\s*(Uses Template.*|Idea Version.*)$/gm, '');
   let html = md
     // headings
     .replace(/^###\s+\*\*\*(.*?)\*\*\*.*/gm, '<h3>$1</h3>')
@@ -33,7 +35,7 @@ function mdToHtml(md){
     .replace(/\*([^*]+)\*/g, '$1')
     // lists
     .replace(/^-\s+(.*)/gm, '<li>$1</li>')
-    // blockquotes
+    // blockquotes (after cleanup)
     .replace(/^>\s+(.*)/gm, '<blockquote>$1</blockquote>')
     // horizontal rules
     .replace(/^---$/gm, '<hr/>')
