@@ -18,31 +18,70 @@ function stripFrontMatter(md){
   return md;
 }
 
-// Tiny markdown to HTML (preview mode): remove raw ** and ##, convert main structures
+// Markdown to HTML renderer (idea pages): supports headings, emphasis, links, code, lists, blockquotes, hr, and tables
 function mdToHtml(md){
   md = stripFrontMatter(md);
   // Remove boilerplate template/version meta lines in blockquotes
   md = md.replace(/^\s*>\s*(Uses Template.*|Idea Version.*)$/gm, '');
+
+  // Convert GitHub-style tables before paragraphizing
+  function convertTables(src){
+    const lines = src.split('\n');
+    const out = [];
+    let i=0;
+    const isRow = (s)=>/\|/.test(s);
+    const isDiv = (s)=>/^\s*\|?\s*:?-{3,}\s*(\|\s*:?-{3,}\s*)+\|?\s*$/.test(s);
+    while(i<lines.length){
+      if(i+1<lines.length && isRow(lines[i]) && isDiv(lines[i+1])){
+        const header = lines[i];
+        i+=2; const rows=[];
+        while(i<lines.length && isRow(lines[i]) && lines[i].trim()!==''){ rows.push(lines[i]); i++; }
+        const split = (r)=>r.trim().replace(/^\|/,'').replace(/\|$/,'').split('|').map(c=>c.trim());
+        const ths = split(header);
+        let html = '<table><thead><tr>'+ths.map(h=>'<th>'+h+'</th>').join('')+'</tr></thead><tbody>';
+        for(const r of rows){ const tds=split(r); html += '<tr>'+tds.map(d=>'<td>'+d+'</td>').join('')+'</tr>'; }
+        html += '</tbody></table>';
+        out.push(html);
+        continue;
+      }
+      out.push(lines[i]);
+      i++;
+    }
+    return out.join('\n');
+  }
+
+  md = convertTables(md);
+
   let html = md
+    // code fences (```)
+    .replace(/```([\s\S]*?)```/g, (_, code)=>'<pre><code>'+code.replace(/</g,'&lt;').replace(/>/g,'&gt;')+'</code></pre>')
     // headings
     .replace(/^###\s+\*\*\*(.*?)\*\*\*.*/gm, '<h3>$1</h3>')
     .replace(/^###\s+\*\*(.*?)\*\*.*/gm, '<h3>$1</h3>')
     .replace(/^###\s+(.*)/gm, '<h3>$1</h3>')
     .replace(/^##\s+(.*)/gm, '<h2>$1</h2>')
     .replace(/^#\s+(.*)/gm, '<h1>$1</h1>')
-    // bold/italic cleanup
-    .replace(/\*\*([^*]+)\*\*/g, '$1')
-    .replace(/\*([^*]+)\*/g, '$1')
-    // lists
-    .replace(/^-\s+(.*)/gm, '<li>$1</li>')
-    // blockquotes (after cleanup)
+    // emphasis and inline code
+    .replace(/\*\*([^*]+)\*\*/g, '<strong>$1</strong>')
+    .replace(/\*([^*]+)\*/g, '<em>$1</em>')
+    .replace(/`([^`]+)`/g, '<code>$1</code>')
+    // links
+    .replace(/\[([^\]]+)\]\(([^)]+)\)/g, '<a href="$2" target="_blank" rel="noopener">$1</a>')
+    // lists placeholders
+    .replace(/^\d+\.\s+(.*)/gm, '<oli>$1</oli>')
+    .replace(/^-\s+(.*)/gm, '<uli>$1</uli>')
+    // blockquotes
     .replace(/^>\s+(.*)/gm, '<blockquote>$1</blockquote>')
     // horizontal rules
     .replace(/^---$/gm, '<hr/>')
     // paragraphs
     .replace(/\n\n/gm, '</p><p>');
+
   html = '<p>'+html+'</p>';
-  html = html.replace(/(<li>.*?<\/li>)(?=(?:<li>|$))/gs, '<ul>$1</ul>');
+  // Wrap list placeholders and unwrap block elements from paragraphs
+  html = html.replace(/(?:<uli>.*?<\/uli>)+/gs, m=>'<ul>'+m.replace(/<uli>/g,'<li>').replace(/<\/uli>/g,'</li>')+'</ul>');
+  html = html.replace(/(?:<oli>.*?<\/oli>)+/gs, m=>'<ol>'+m.replace(/<oli>/g,'<li>').replace(/<\/oli>/g,'</li>')+'</ol>');
+  html = html.replace(/<p>\s*(<(?:ul|ol|pre|table|blockquote)[\s\S]*?<\/(?:ul|ol|pre|table|blockquote)>)\s*<\/p>/g, '$1');
   return html;
 }
 
@@ -118,6 +157,21 @@ function extractOneLiner(md){
 function main(){
   ensureDir(OUT);
   const files = fs.readdirSync(SRC).filter(f=>f.endsWith('.md'));
+  // write site CSS (purple theme + tables)
+  fs.writeFileSync(path.join(__dirname,'style.css'), `body{font-family:Inter,system-ui,-apple-system,Segoe UI,Roboto,Helvetica,Arial,sans-serif;margin:0;background:#faf7ff;color:#1a102b}
+  header{padding:28px 20px;background:#5B21B6;color:white}
+  h1{margin:8px 0 0}
+  .container{max-width:940px;margin:20px auto;padding:0 16px}
+  h2,h3{margin-top:24px}
+  ul,ol{padding-left:24px}
+  code{background:#f3f4f6;border:1px solid #e5e7eb;border-radius:6px;padding:2px 4px}
+  pre{background:#0b1021;color:#e5e7eb;padding:12px;border-radius:8px;overflow:auto}
+  table{width:100%;border-collapse:collapse;margin:16px 0;background:white}
+  th,td{border:1px solid #e5e7eb;padding:8px;text-align:left}
+  thead th{background:#f3f4f6}
+  blockquote{border-left:4px solid #e5e7eb;padding:6px 12px;color:#4b5563;background:#fafafa;border-radius:6px}
+  `);
+
   const index = [];
   const overrides = fs.existsSync(OVERRIDES) ? JSON.parse(fs.readFileSync(OVERRIDES,'utf8')) : {};
   for(const file of files){
@@ -137,13 +191,19 @@ function main(){
   }
   // data for index.html (works from file://)
   fs.writeFileSync(DATA_JS, 'window.IDEAS = ' + JSON.stringify(index, null, 2) + ';\n');
-  // write a tiny CSS
-  fs.writeFileSync(path.join(__dirname,'style.css'), `body{font-family:Inter,system-ui,-apple-system,Segoe UI,Roboto,Helvetica,Arial,sans-serif;margin:0;background:#f7faf9;color:#1f2937}
-  header{padding:24px 20px;background:#0f766e;color:white}
+  // write site CSS (purple theme + tables)
+  fs.writeFileSync(path.join(__dirname,'style.css'), `body{font-family:Inter,system-ui,-apple-system,Segoe UI,Roboto,Helvetica,Arial,sans-serif;margin:0;background:#faf7ff;color:#1a102b}
+  header{padding:28px 20px;background:#5B21B6;color:white}
   h1{margin:8px 0 0}
-  .container{max-width:860px;margin:20px auto;padding:0 16px}
+  .container{max-width:940px;margin:20px auto;padding:0 16px}
   h2,h3{margin-top:24px}
-  ul{padding-left:20px}
+  ul,ol{padding-left:24px}
+  code{background:#f3f4f6;border:1px solid #e5e7eb;border-radius:6px;padding:2px 4px}
+  pre{background:#0b1021;color:#e5e7eb;padding:12px;border-radius:8px;overflow:auto}
+  table{width:100%;border-collapse:collapse;margin:16px 0;background:white}
+  th,td{border:1px solid #e5e7eb;padding:8px;text-align:left}
+  thead th{background:#f3f4f6}
+  blockquote{border-left:4px solid #e5e7eb;padding:6px 12px;color:#4b5563;background:#fafafa;border-radius:6px}
   `);
   console.log('Built site/ideas/*.html and index.data.js');
 }
