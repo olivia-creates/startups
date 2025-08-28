@@ -1,0 +1,10 @@
+:root{--bg:#faf7ff;--text:#1a102b;--accent:#5B21B6;--accent-2:#7C3AED;--card:#ffffff;--muted:#6b7280;--border:#e5e7eb}
+body{background:var(--bg);color:var(--text)}
+header{background:var(--accent)}
+.btn{background:var(--accent)}
+.card{background:var(--card);border:1px solid var(--border)}
+.card h2{font-size:22px;margin:0 0 10px}
+.card .pitch{font-size:15px;color:var(--text);margin:6px 0 10px;line-height:1.45}
+.card .stat{font-size:13px;color:var(--muted)}
+.grid{display:grid;gap:20px;padding:20px;grid-template-columns:repeat(auto-fill,minmax(340px,1fr))}
+

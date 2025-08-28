@@ -3,19 +3,18 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Startup Ideas</title>
+  <title>Startup Seeds 🌱</title>
   <style>
-    body{font-family:Inter,system-ui,-apple-system,Segoe UI,Roboto,Helvetica,Arial,sans-serif;margin:0;background:#f7faf9;color:#1f2937}
-    header{padding:24px 20px;background:#0f766e;color:white}
-    h1{margin:0;font-size:28px}
-    .grid{display:grid;gap:16px;padding:20px;grid-template-columns:repeat(auto-fill,minmax(280px,1fr))}
-    .card{background:white;border-radius:12px;padding:16px;border:1px solid #e5e7eb;box-shadow:0 1px 3px rgba(0,0,0,.06)}
-    .card h2{margin:0 0 8px;font-size:18px}
-    .card p{margin:0 0 12px;color:#6b7280}
-    .btn{display:inline-block;background:#0f766e;color:white;padding:8px 12px;border-radius:8px;text-decoration:none}
+    body{font-family:Inter,system-ui,-apple-system,Segoe UI,Roboto,Helvetica,Arial,sans-serif;margin:0;background:#faf7ff;color:#1a102b}
+    header{padding:28px 20px;background:#5B21B6;color:white}
+    h1{margin:0;font-size:30px}
+    .grid{display:grid;gap:20px;padding:20px;grid-template-columns:repeat(auto-fill,minmax(340px,1fr))}
+    .card{background:white;border-radius:14px;padding:18px;border:1px solid #e5e7eb;box-shadow:0 2px 6px rgba(0,0,0,.06)}
+    .card h2{margin:0 0 8px;font-size:20px}
+    .card .pitch{margin:6px 0 10px;color:#1a102b}
+    .card .stat{color:#6b7280}
+    .btn{display:inline-block;background:#5B21B6;color:white;padding:8px 12px;border-radius:8px;text-decoration:none}
     footer{padding:20px;color:#6b7280;text-align:center}
-    .tabs{display:flex;gap:8px;flex-wrap:wrap;padding:0 20px 12px}
-    .tab{background:#e6f4f1;border:1px solid #cce9e2;color:#0f766e;border-radius:16px;padding:6px 10px;text-decoration:none}
   </style>
 </head>
 <body>
@@ -30,23 +29,16 @@
   <script>
     (function(){
       const ideas = (window.IDEAS || []);
-      const tabs = document.getElementById('tabs');
       const grid = document.getElementById('grid');
       if(!ideas.length){
         grid.innerHTML = '<div class="card"><h2>No ideas found</h2><p>Run: <code>node site/build_ideas.js</code></p></div>';
         return;
       }
       for(const idea of ideas){
-        const tab = document.createElement('a');
-        tab.className='tab';
-        tab.href = 'ideas/' + idea.slug + '.html';
-        tab.textContent = idea.title;
-        tabs.appendChild(tab);
-      }
-      for(const idea of ideas){
         const card = document.createElement('div');
         card.className='card';
-        card.innerHTML = `<h2>${idea.title}</h2><p>${idea.one_liner}</p><a class="btn" href="ideas/${idea.slug}.html">Open</a>`;
+        const statHtml = idea.stat ? `<div class=\"stat\">${idea.stat}</div>` : '';
+        card.innerHTML = `<h2>${idea.title}</h2><div class="pitch">${idea.one_liner}</div>${statHtml}<a class="btn" href="ideas/${idea.slug}.html">Open</a>`;
         grid.appendChild(card);
       }
     })();

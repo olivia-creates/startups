@@ -7,6 +7,7 @@ const path = require('path');
 const SRC = path.join(__dirname, '..', 'startup_ideas');
 const OUT = path.join(__dirname, 'ideas');
 const DATA_JS = path.join(__dirname, 'index.data.js');
+const OVERRIDES = path.join(__dirname, 'one_liners_override.json');
 
 // Tiny markdown to HTML: handles headings, paragraphs, lists, code fences minimally
 function mdToHtml(md){
@@ -74,13 +75,21 @@ function main(){
   ensureDir(OUT);
   const files = fs.readdirSync(SRC).filter(f=>f.endsWith('.md'));
   const index = [];
+  const overrides = fs.existsSync(OVERRIDES) ? JSON.parse(fs.readFileSync(OVERRIDES,'utf8')) : {};
   for(const file of files){
     const title = path.basename(file, '.md');
     const md = fs.readFileSync(path.join(SRC, file), 'utf8');
     const body = mdToHtml(md);
     const html = layout(title, body);
     fs.writeFileSync(path.join(OUT, title+'.html'), html);
-    index.push({ title, slug: title, one_liner: extractOneLiner(md) });
+    const auto = extractOneLiner(md);
+    const raw = overrides[title];
+    let one = auto; let stat = '';
+    if (raw){
+      if (typeof raw === 'string') { one = raw; }
+      else { one = raw.one || raw.one_liner || auto; stat = raw.stat || ''; }
+    }
+    index.push({ title, slug: title, one_liner: one, stat });
   }
   // data for index.html (works from file://)
   fs.writeFileSync(DATA_JS, 'window.IDEAS = ' + JSON.stringify(index, null, 2) + ';\n');
