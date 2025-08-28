@@ -35,13 +35,38 @@ function layout(title, body){
 
 function ensureDir(p){ if(!fs.existsSync(p)) fs.mkdirSync(p, {recursive:true}); }
 
+function stripFrontMatter(md){
+  if(md.startsWith('---')){
+    const end = md.indexOf('\n---', 3);
+    if(end !== -1) return md.slice(end+4);
+  }
+  return md;
+}
+function clean(s){
+  return s.replace(/^\s+|\s+$/g,'').replace(/^"|\"|\'|\*+/g,'').replace(/\*+$/,'');
+}
+function looksLikeProblem(s){
+  return /problem|❌/i.test(s);
+}
 function extractOneLiner(md){
-  const triple = md.match(/^###\s+\*\*\*(.*?)\*\*\*.*/m);
-  if (triple) return triple[1].trim();
-  const bold = md.match(/^###\s+\*\*(.*?)\*\*.*/m);
-  if (bold) return bold[1].trim();
-  const plain = md.match(/^###\s+(.*)/m);
-  if (plain) return plain[1].trim();
+  md = stripFrontMatter(md);
+  // 1) Tagline in italics on its own line
+  const italic = md.match(/^\s*\*([^*].{5,120}?)\*\s*$/m);
+  if (italic && !looksLikeProblem(italic[1])) return clean(italic[1]);
+  // 2) H3 tagline (***text*** or **text** or plain) not about problem
+  const h3 = md.match(/^###\s+(?:\*\*\*|\*\*)?([^*#\n].{5,120}?)(?:\*\*\*|\*\*)?\s*$/m);
+  if (h3 && !looksLikeProblem(h3[1])) return clean(h3[1]);
+  // 3) First short sentence after a title
+  const lines = md.split(/\n/).slice(0,60);
+  let sawTitle = false;
+  for(const line of lines){
+    if(/^#{1,3}\s+/.test(line)){ sawTitle = true; continue; }
+    if(!sawTitle) continue;
+    const l = line.trim();
+    if(!l || /^---$/.test(l) || /^###/.test(l) || /^>/.test(l) || /^\*/.test(l) && l.length<4) continue;
+    if(looksLikeProblem(l)) continue;
+    if(l.length<=120 && !/:$/.test(l)) return clean(l);
+  }
   return 'Click to read more';
 }
 

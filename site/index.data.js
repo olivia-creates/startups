@@ -7,7 +7,7 @@ window.IDEAS = [
   {
     "title": "CSweet",
     "slug": "CSweet",
-    "one_liner": "Meet the world's best minds."
+    "one_liner": "Think like the best. Grow like the best."
   },
   {
     "title": "CityByDesign",
@@ -22,7 +22,7 @@ window.IDEAS = [
   {
     "title": "DisruptOpenMarketplace",
     "slug": "DisruptOpenMarketplace",
-    "one_liner": "❌ 1. The Problem"
+    "one_liner": "- Marketing asset libraries for each product (pitch decks, copy, visuals, testimonials)"
   },
   {
     "title": "Feast",
@@ -32,22 +32,22 @@ window.IDEAS = [
   {
     "title": "Flagstone",
     "slug": "Flagstone",
-    "one_liner": "❌ The Problem"
+    "one_liner": "See the world’s opportunities, not just its listings."
   },
   {
     "title": "Haven",
     "slug": "Haven",
-    "one_liner": "❌ The Problem"
+    "one_liner": "Love works in the background, so you don’t have to."
   },
   {
     "title": "Lovelines",
     "slug": "Lovelines",
-    "one_liner": "Click to read more"
+    "one_liner": "Texting is a $200B/year industry"
   },
   {
     "title": "Mirroir.ai",
     "slug": "Mirroir.ai",
-    "one_liner": "See it. Feel it. Own it."
+    "one_liner": "Global e-commerce: projected to exceed $8.1 trillion by 2026"
   },
   {
     "title": "NewWork",
@@ -57,22 +57,22 @@ window.IDEAS = [
   {
     "title": "Paperless",
     "slug": "Paperless",
-    "one_liner": "❌ The Problem"
+    "one_liner": "Your receipts—smarter, greener, always with you."
   },
   {
     "title": "Passworld",
     "slug": "Passworld",
-    "one_liner": "❌ The Problem"
+    "one_liner": "Turn every café into a co-working space."
   },
   {
     "title": "RealDeal",
     "slug": "RealDeal",
-    "one_liner": "Click to read more"
+    "one_liner": "RealDeal generates a referral link"
   },
   {
     "title": "Tower",
     "slug": "Tower",
-    "one_liner": "❌ The Problem"
+    "one_liner": "Build faster, design smarter."
   },
   {
     "title": "Vesta",
