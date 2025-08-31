@@ -92,3 +92,27 @@ Imagine:
 **🎯 Tagline**
  “RealDeal — Share what you love. Get paid when it sells.”
 
+
+
+---
+
+**⚙️ Implementation Strategy**
+
+- Phase 1: Link generator, escrowed payouts, creator/company onboarding
+- Phase 2: Asset kits per product, auto‑disclosures, analytics
+- Phase 3: API for e‑com platforms; bulk onboarding for SMBs
+
+---
+
+**📉 Unit Economics**
+
+- Take rate: 12% of commission paid; average commission 8–15%
+- Example: $120 AOV DTC brand; 12% commission = $14.40 → platform take @12% = $1.73
+- CAC: creator side $6–$15 via social + referral; brand side $120–$400; LTV per brand $1.2k–$6k/yr
+- GMV concentration: top 20% creators drive ~70% of sales → focus enablement on power users
+
+---
+
+**✨ Tagline**
+
+Referral links for everything.

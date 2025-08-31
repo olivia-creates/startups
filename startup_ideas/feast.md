@@ -159,6 +159,21 @@ The audience is ready for something beyond endless human influencer content. AI 
 
 ### **🎯 17. Storytelling Layer (Pitch/Website Copy)**
 
+---
+
+### **📉 Unit Economics**
+
+- Virtual creator feed; revenue via subs + brand moments + tips
+- ARPU target: $7–$15/mo; COGS (inference) ~$1–$3/user/mo → 70–85% GM
+- CAC: <$5 via UGC loops; LTV $60–$180
+
+---
+
+### **✨ Tagline**
+
+Follow creators who never burn out.
+
+
 Slogan: “Feast — The feed you can’t stop eating.”
 
 Header & Hooks:

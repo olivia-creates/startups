@@ -39,6 +39,22 @@ South Asians don’t need another Western app — they need a preventive, cultur
 
 ---
 
+---
+
+### **📉 Unit Economics**
+
+- Pricing: $9.99/mo consumer app + $199/yr family plan; clinical add‑ons billed separately
+- COGS: PPG signal processing + model inference ~$0.02/session; 85–90% GM on software
+- CAC: $15–$40 via diaspora communities + cardiology partners; LTV $120–$300
+- Payors: explore employer + insurer pilots where population risk is elevated
+
+---
+
+### **✨ Tagline**
+
+Live longer, love longer.
+
+
 ### **🚀 3. The Solution**
 
 An AI‑powered heart health platform tailored to South Asia.

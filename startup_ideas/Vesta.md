@@ -182,3 +182,10 @@ For Landlords:
 - Sub-header: Vesta turns rent from a sunk cost into a smarter financial tool — delivering modest returns, preventing credit card losses, and supporting expats with trust and community.
 - CTA: “Rent with confidence.”
 
+
+
+---
+
+### **✨ Tagline**
+
+Get returns on your rent.

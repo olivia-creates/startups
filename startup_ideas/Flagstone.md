@@ -133,3 +133,20 @@ A real estate investment platform that **maps context onto listings** and enable
 
 * “Flagstone — Own the world, one piece at a time.”
 
+
+
+---
+
+### **📉 Unit Economics**
+
+- Revenue streams: 1–2% transaction fee on GMV + premium analytics ($49–$199/mo) + developer SaaS
+- Example: $10k average ticket × 2,000 investors × 1.2 deals/year = $24M GMV → platform fee @1.5% = $360k; SaaS + premium = additional $500k ARR
+- Data licensing costs scale with regions; blended gross margin target 65–75%
+- CAC: $120–$300 via content + partnerships with developers; LTV: $450–$1,200 (fees + subs)
+- Liquidity strategy: seed “context‑rich” regions, curate 50 high‑quality listings/month to focus demand
+
+---
+
+### **✨ Tagline**
+
+See the world’s opportunities, not just listings.

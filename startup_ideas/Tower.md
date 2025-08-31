@@ -2,7 +2,7 @@
 
 Build faster, design smarter.
 
-Where builders win. 
+Where builders win.
 
 ---
 
@@ -22,8 +22,8 @@ Open-form conversational experiences in vibe coding platforms (like Lovable) oft
 
 ### **💡 The Insight**
 
-Random conversations rarely turn into structured, functional app plans.  
- But **guided choices \+ human vision \+ structured UX** \= faster, higher-quality outputs.  
+Random conversations rarely turn into structured, functional app plans.
+ But **guided choices \+ human vision \+ structured UX** \= faster, higher-quality outputs.
  If we combine the creativity of open-ended thinking with a streamlined, visual decision process, we can help users create better products in less time — and ensure the AI has everything it needs to succeed.
 
 ---
@@ -106,12 +106,34 @@ Tower replaces messy freeform chats with a **guided, interactive creation experi
 
 Problem: the current open form conversional experience with vibe coding apps like Lovable fails to create consistency and leads to interpretation and errors in analysing the user’s intended design. This leads to wastes of time, credits, frustrations, and apps that do not leverage what we know in terms of excellent design and coding. It innnocently submits to the user’s alleatory wordage and expects a random conversation to turn into a structured plan, but the messy and lazy nature of most human beings can’t lead to this, this is why more structure and guidance merged with a human vision can lead to better outcomes.
 
-How: 
+How:
 
 We offer a guided creation experience through a series of questions and choices, an interactive form that allows the user to save a ton of time by clicking on the right answer, instead of trying to type out the right thing but not knowing the exact wording, and going back and forth and getting lost on an infinite thread.
 
 We always offer the option to write another answer, and as the answers are selected, the elements are laid out and the blocks for the back end are being put together in a beautiful visual way, which you can then click on to modify their attributes, and move to change the connections. This allows the user to quickly connect to key elements vs chatting without any structure.
 
-Ex.: are you creating a B2B or B2C app?   
-Web or mobile or both?   
-Which type of aesthetics do you prefer? (Instead of going from scratch hoping the user finds the right words) 
+Ex.: are you creating a B2B or B2C app?
+Web or mobile or both?
+Which type of aesthetics do you prefer? (Instead of going from scratch hoping the user finds the right words)
+
+---
+
+### **⚙️ Implementation Strategy**
+
+- Phase 1: Wizard that turns product ideas into spec + backlog + wireframes
+- Phase 2: Component marketplace + generative UI themes
+- Phase 3: Export to code (Next.js/Expo) + deployment recipes
+
+---
+
+### **📉 Unit Economics**
+
+- Pricing: $39/mo creator, $199/mo team, $999/mo studio
+- COGS: model calls + hosting ~$0.05/spec; 80–90% gross margin
+- CAC: $40–$120 via YouTube/PBH + templates; LTV $480–$2,400
+
+---
+
+### **✨ Tagline**
+
+Build faster. Design smarter.

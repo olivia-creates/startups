@@ -475,3 +475,21 @@ For key decisions, customers can request the actual human executive to review an
 * "Your AI C-Suite. Available now."
 * "Executive intelligence, artificial availability."
 * "The minds that built empires, now building yours."
+
+
+---
+
+### **📉 6. Unit Economics**
+
+- Supply build (executive agent): $25–75k one‑time (interviews, data curation, eval) → amortized over agent lifetime
+- Hosting/inference: $0.04–$0.18/session depending on context length; avg session margin >80%
+- Price points: $99/hr session credits; $999/mo team plan; $4,999 enterprise pilot
+- Take rate on human premium reviews: 20–30% coordinator fee
+- Sales efficiency: PLG + partner channels (institutions) target CAC $300–$1,200; LTV $6k–$24k (12–24 months)
+- Gross margin: 70–85% blended (software‑driven usage dominates)
+
+---
+
+### **✨ Tagline**
+
+Rent the world’s best minds.

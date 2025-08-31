@@ -143,6 +143,22 @@ Compute strategy (today → 12 months)
 
 KPIs (Phase 1)
 * Preview→Final export rate ≥ 35%
+
+---
+
+### **📉 Unit Economics**
+
+- Conversion lift: +0.8–1.5 pp; return rate reduction: −8–20%
+- Pricing: $0.15–$0.40 per try‑on session; $2k–$10k/mo base for enterprise
+- COGS: rendering/inference costs $0.03–$0.12/session → 70–85% gross margin
+- LTV: $60k–$240k over 24 months; CAC via partner SI/agency channel $6k–$20k
+
+---
+
+### **✨ Tagline**
+
+See it. Feel it. Own it.
+
 * Add-to-cart uplift vs. brand baseline ≥ +12%
 * Conversion uplift vs. control ≥ +3–5%
 * Return rate reduction (size/style) ≥ −8–12%

@@ -138,6 +138,28 @@ Tertiary: Aspiring operators (humans!)
 
 ---
 
+
+---
+
+### **📉 Unit Economics**
+
+- Delivery model: Hybrid software + services (blueprints + playbooks + ops kits)
+- ACV: $150k–$500k per district (depends on scope: number of concepts, data depth, lender package)
+- Gross margin: 65–75% blended (software licensing + standardized playbooks are high‑margin)
+- Staffing: 1 lead strategist, 1 data analyst, 1 designer, 1 ops specialist per district (scales down as blueprints are reused)
+- Cost drivers: mobility/payment data licenses, field validation, design packages
+- Example (single district, 6 concepts, 16‑week engagement):
+  - Revenue: $240k
+  - Direct costs: $70k (data/API + field work + design kits)
+  - Contribution: $170k (71%)
+- Expansion: multi‑district packages with 15–25% volume discounts; recurring support retainers $8k–$20k/mo for refreshes and operator coaching
+
+---
+
+### **✨ Tagline**
+
+Blueprint prosperity, block by block.
+
 ### **🧭 8. Competitors & Alternatives**
 
 * Traditional consulting (placemaking, retail leasing strategy)

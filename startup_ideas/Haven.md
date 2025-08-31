@@ -20,7 +20,7 @@ Dating apps are noisy, shallow, and exhausting:
 
 ### **💡 The Insight**
 
-People don’t want *more convos*, they want **qualified matches**.  
+People don’t want *more convos*, they want **qualified matches**.
  AI can run first-date convos in the background, filter compatibility, and surface only the best prospects — saving time, reducing stress, and increasing safety.
 
 ---
@@ -193,3 +193,28 @@ People don’t want *more convos*, they want **qualified matches**.
 
 * **Sub-header** → *Haven is your private dating agent — screening, matching, and booking dates, so you only meet who truly matters.*
 
+
+
+---
+
+### **⚙️ Implementation Strategy**
+
+- Phase 0 (Playbooks): codify matchmaker frameworks: qualification trees, deal‑breakers, safety rules
+- Phase 1 (MVP): background agent convos, compatibility reports, concierge booking v1; pilot with 200 curated users
+- Phase 2 (Trust & Safety): KYC, reputation, double‑opt consent, venue partnerships
+- Phase 3 (Growth): white‑glove tier, partner matchmakers, geography expansion
+
+---
+
+### **📉 Unit Economics**
+
+- Price: $149–$299/mo; concierge booking $50–$100; premium “human review” tier $999/mo
+- CAC (paid + creators): $120–$220; LTV $1,200–$2,400 (8–12 months)
+- Gross margin: 75–85% software; 55–65% with concierge human‑in‑loop
+- North star: successful offline dates/user/month; target 1.5–2.5
+
+---
+
+### **✨ Tagline**
+
+Love works in the background.

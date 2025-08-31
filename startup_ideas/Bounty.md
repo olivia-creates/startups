@@ -107,3 +107,32 @@ Love Bounty sits at the **intersection of dating apps and matchmaking** — blen
 
 * The idea of **bounties \+ marketplaces** is proven in gig economy (Upwork, Fiverr, TaskRabbit) — Love Bounty applies it to the most valuable market of all: relationships.
 
+
+
+---
+
+### **📉 Unit Economics**
+
+- Sides of the marketplace: Singles (demand) and Matchmakers/Connectors (supply)
+- Pricing: user‑set bounty, typical range $100–$5,000; white‑glove concierge $10k–$50k
+- Platform take rate: 15–20% of bounty paid on milestone (e.g., verified first date → 10%, exclusivity → +5%, 3‑month relationship → +5%)
+- Escrow & milestones: funds held in escrow; programmatic release on verified events
+- Fraud & quality controls: ID + selfie verification, duplicate‑intro checks, dispute mediation
+- Unit example (mid‑market bounty $1,000):
+  - Gross bounty paid: $1,000
+  - Platform take @ 18%: $180
+  - Payment + KYC costs: ~$18 (1.8%)
+  - Trust & safety + support: ~$12
+  - Contribution margin: ~$150 (15%)
+- Acquisition assumptions (early market):
+  - CAC (single): $35–$90 via IG/TikTok creators + PR; conversion 3–6%
+  - CAC (connector): $10–$25 via referral incentives (“bring 3 intros, get $50 credit”)
+  - LTV (single): $220–$600 (multiple cycles, higher bounties over time)
+  - LTV/CAC: 2.5–5.0x target after month 6
+- Liquidity levers: seed with dating coaches + “super‑connectors,” bounty pools for specific cities/verticals (e.g., doctors, engineers)
+
+---
+
+### **✨ Tagline**
+
+Put a price on love — pay when love lands.

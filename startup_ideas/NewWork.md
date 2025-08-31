@@ -1,27 +1,27 @@
-**NewWork**  
+**NewWork**
  Work at the speed of AI.
 
 ---
 
-**❌ The Problem**  
- AI is great at doing, but humans still need to guide, approve, and refine its thinking.  
+**❌ The Problem**
+ AI is great at doing, but humans still need to guide, approve, and refine its thinking.
  Right now, that collaboration feels clunky:
 
 * AI asks the same questions over and over
 
 * Human input happens in scattered tools and endless chat threads
 
-* Workflows remain hidden, repetitive, and inefficient  
+* Workflows remain hidden, repetitive, and inefficient
    In an era of AI-human collaboration, we need a way to *enjoy* the process, not drown in it.
 
 ---
 
-**💡 The Insight**  
+**💡 The Insight**
  The future of work isn’t AI replacing humans — it’s AI making humans *more creative*. The key is frictionless collaboration where decisions, approvals, and refinements feel engaging, even fun. Gamification keeps people motivated while the system learns from them, reducing repetitive asks and streamlining work over time.
 
 ---
 
-**🚀 The Solution: NewWork**  
+**🚀 The Solution: NewWork**
  NewWork turns AI-human collaboration into a game you *want* to play.
 
 * Swipe right or left on AI’s suggested actions to refine your agent’s decision-making (Tinder for work decisions)
@@ -79,11 +79,34 @@ Imagine:
 
 ---
 
-**⏳ Why Now**  
+**⏳ Why Now**
  AI has outpaced our ability to integrate it fluidly into human work. Tools today either automate too much (risking trust) or too little (wasting time). NewWork strikes the balance, making human guidance *fun*, *fast*, and *freeing*.
 
 ---
 
-**✨ Tagline**  
+**✨ Tagline**
  “NewWork — Love the way you work.”
 
+
+
+---
+
+**⚙️ Implementation Strategy**
+
+- Phase 1: Decision swipe deck, TaskTrust meter, voice approvals; Slack/Email integrations
+- Phase 2: Workflow map, pattern detection, auto‑prompting
+- Phase 3: Export to PM tools; policy guardrails for enterprise
+
+---
+
+**📉 Unit Economics**
+
+- Pricing: $12/user/mo; enterprise $25–$49/user/mo
+- COGS: inference + storage <$1/user/mo → 80–90% GM
+- CAC: $8–$25 self‑serve; LTV $144–$588
+
+---
+
+**✨ Tagline**
+
+Love the way you work.

@@ -182,3 +182,20 @@ An open marketplace platform specifically for VC portfolio companies that enable
 - "From layoffs to lift-off: Transform workforce challenges into distributed growth opportunities"
 - "Every connection in your network is a potential customer waiting to be reached"
 - "Simple tools, serious results: Professional-grade affiliate marketing made effortless"
+
+---
+
+### **📉 18. Unit Economics**
+
+- Take rate: 10% of affiliate commissions; average commission paid 15% of deal value
+- Example (B2B SaaS referral): $12k ACV → 15% commission = $1,800; platform take @10% = $180
+- Payment rails: Stripe Connect fees ~2.9% + fixed; net margin per payout 6–8% after processing
+- CAC: company onboarding via VC partners: blended $500–$1,500; LTV per company $12k–$36k/yr (SaaS + take rate)
+- Affiliate activation rate target: 35–50% active, 10–15% top performers drive 70% of GMV
+- Payback: <6 months with 3+ active affiliates per company
+
+---
+
+### **✨ 19. Tagline**
+
+Turn your network into distributed sales — instantly.
