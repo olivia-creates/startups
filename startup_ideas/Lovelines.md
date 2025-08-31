@@ -1,4 +1,4 @@
-**Lovelines**  
+**Lovelines**
 Step into the story
 
 ---
@@ -25,7 +25,7 @@ For **authors & IP owners (B2B)**:
 
 ---
 
-**💡 The Insight**  
+**💡 The Insight**
  Text messaging is the most addictive digital format in the world — it’s personal, intimate, and habitual.
 
 * **23B+** texts are sent daily worldwide
@@ -40,7 +40,7 @@ The secret? **Story**. Strong narrative arcs, emotional beats, and compelling ch
 
 ---
 
-**🚀 The Solution: Lovelines**  
+**🚀 The Solution: Lovelines**
  Lovelines transforms stories into immersive, text-message-based experiences — with **authors** at the creative core.
 
 **For Readers (B2C app):**
@@ -93,7 +93,7 @@ The secret? **Story**. Strong narrative arcs, emotional beats, and compelling ch
 
 ---
 
-**💰 Business Model**  
+**💰 Business Model**
  **B2C App (Lovelines):**
 
 * Free-to-play with premium unlocks (story branches, early drops, VIP content).
@@ -142,3 +142,80 @@ The secret? **Story**. Strong narrative arcs, emotional beats, and compelling ch
 
 * IP extensibility — stories can evolve into podcasts, merch, film, and beyond.
 
+
+
+---
+
+**🏹 Ideal Customer Avatar**
+
+- Gen Z & Millennials (16–34), heavy messaging users, love romance/thriller/mystery
+- Authors & publishers who want new monetization and IP expansion
+
+---
+
+**🧭 Competitors & Alternatives**
+
+- Episode/Choices (gamey visual novels), Chapters, interactive chat bots
+- Traditional ebooks/audiobooks; fanfic platforms
+
+---
+
+**⚔️ Differentiation**
+
+- Author‑led emotional arcs vs. random chat; daily serialized “drops”; shareable receipts
+
+---
+
+**📈 Marketing & Growth**
+
+- Author collabs, BookTok/Bookstagram, teaser drops, collectible endings
+
+---
+
+**🚦 Distribution**
+
+- iOS/Android app; web reader; publisher integrations
+
+---
+
+**🌱 PLG & Viral Mechanics**
+
+- Invite to unlock alternate ending; shareable story receipts; fan leaderboards
+
+---
+
+**⚙️ Implementation Strategy**
+
+- Phase 1: Author Studio, reader app MVP, 3 launch titles
+- Phase 2: Branching tools, voice/photo assets, marketplace
+- Phase 3: Publisher pipeline, brand IP collabs
+
+---
+
+**🛡️ Risks & Mitigation**
+
+- Low‑quality UGC → editorial review + author onboarding
+- Novelty fade → seasons, limited‑time drops, collectible arcs
+- Platform lock‑in → export royalties & cross‑posting options
+
+---
+
+**📉 Predictive Financials & Unit Economics**
+
+- ARPU $4–$8/mo; COGS inference/media $0.60–$1.80 → 70–85% GM
+- CAC <$2 via creator channels; LTV $48–$120 (churn 6–10%/mo)
+- Year 3: 250k subs → $12–$24M ARR
+
+---
+
+**✨ Tagline**
+
+Step into the story.
+
+---
+
+**🎯 Storytelling Layer**
+
+- Slogan: “Lovelines — Stories that text you back.”
+- Header: “Step into the story.”
+- Sub‑header: “Narrative texting that hooks you — and pays authors fairly.”
