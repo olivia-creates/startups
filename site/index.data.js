@@ -24,14 +24,6 @@ window.IDEAS = [
     "rank": 9
   },
   {
-    "title": "DisruptOpenMarketplace",
-    "slug": "DisruptOpenMarketplace",
-    "one_liner": "Turn VC ecosystems into distributed sales — unleash alumni and fans with instant affiliate kits.",
-    "stat": "$50B+ affiliate market — now for portfolio companies",
-    "status": "In revision",
-    "rank": 1
-  },
-  {
     "title": "Dropin",
     "slug": "Dropin",
     "one_liner": "Turn every café into a co‑working space — buy time with drinks or micro‑payments.",
@@ -86,6 +78,14 @@ window.IDEAS = [
     "stat": "Ship more with fewer meetings",
     "status": "In revision",
     "rank": 7
+  },
+  {
+    "title": "Orbit",
+    "slug": "Orbit",
+    "one_liner": "Turn VC ecosystems into distributed sales — unleash alumni and fans with instant affiliate kits.",
+    "stat": "$50B+ affiliate market — now for portfolio companies",
+    "status": "In revision",
+    "rank": 1
   },
   {
     "title": "Paperless",
