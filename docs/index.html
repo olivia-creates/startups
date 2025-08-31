@@ -42,12 +42,18 @@
         grid.innerHTML = '<div class="card"><h2>No ideas found</h2><p>Run: <code>node site/build_ideas.js</code></p></div>';
         return;
       }
+      ideas.sort((a,b)=>{
+        const ra = (a.rank==null? 999 : a.rank);
+        const rb = (b.rank==null? 999 : b.rank);
+        if (ra!==rb) return ra-rb;
+        return a.title.localeCompare(b.title);
+      });
       for(const idea of ideas){
         const card = document.createElement('div');
         card.className='card';
         const statHtml = idea.stat ? `<div class=\"stat\">${idea.stat}</div>` : '';
-        const status = (idea.status === 'Rejected') ? 'Closed' : (idea.status || 'In revision');
-        const dotClass = status==='Validated' ? 'green' : status==='Closed' ? 'red' : status==='Needs Adjustments' ? 'yellow' : 'yellow';
+        const status = 'In revision';
+        const dotClass = 'yellow';
         const statusHtml = `<div class=\"status-pill\"><span class=\"dot ${dotClass}\"></span>${status}</div>`;
         card.innerHTML = `<div class=\"status-container\">${statusHtml}</div><h2><a href=\"ideas/${idea.slug}.html\">${idea.title}</a></h2><div class=\"pitch\">${idea.one_liner}</div>${statHtml}`;
         grid.appendChild(card);
