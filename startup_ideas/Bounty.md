@@ -133,6 +133,70 @@ Love Bounty sits at the **intersection of dating apps and matchmaking** — blen
 
 ---
 
+---
+
+### **🏹 Ideal Customer Avatar**
+
+- Singles 25–45 in major metros, alumni networks, faith/cultural communities
+- Matchmakers, dating coaches, super‑connectors (earn per successful intro)
+
+---
+
+### **🧭 Competitors & Alternatives**
+
+- Tinder, Hinge; elite matchmakers; matchmaking Facebook/WhatsApp groups
+
+---
+
+### **⚔️ Competitor Analysis (Differentiation)**
+
+| Vector | Love Bounty | Dating Apps | Elite Matchmakers |
+| --- | --- | --- | --- |
+| Quality | Curated via network + bounty | Swipe roulette | High |
+| Cost | Flexible bounty | Low | Very high |
+| Scale | Network effects | Massive | Limited |
+| Trust | Escrow + KYC + milestones | Varies | High |
+
+---
+
+### **📈 Marketing & Growth Strategy**
+
+- “City Bounties” (e.g., Montreal Doctors, Austin Creators); creator campaigns; PR on love economics
+
+---
+
+### **🚦 Distribution Channels**
+
+- Web + mobile; community partners; dating coaches; alumni orgs
+
+---
+
+### **🌱 PLG Loops & Viral Mechanics**
+
+- Each bounty page is shareable; bounty matching games; leaderboards
+
+---
+
+### **🛡️ Risks & Mitigation**
+
+- Bad actors → KYC, denylist; disputes → milestone rules + mediation
+
+---
+
+### **📉 Predictive Financials & Metrics**
+
+- CAC (single): $35–$90; CAC (connector): $10–$25; LTV (single): $220–$600; Payback <3 months
+- North star: Milestone releases / active users / month
+
+---
+
+### **🎯 Storytelling Layer**
+
+- Slogan: “Put a price on love — pay when love lands.”
+- Header: “The world’s network of matchmakers.”
+- Sub‑header: “Post a bounty. Get curated intros. Pay only when it works.”
+
+
 ### **✨ Tagline**
 
 Put a price on love — pay when love lands.

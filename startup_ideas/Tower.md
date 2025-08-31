@@ -48,6 +48,47 @@ Tower replaces messy freeform chats with a **guided, interactive creation experi
 
 2. **Platform:** “Web, mobile, or both?” → Select
 
+
+---
+
+### **🏹 Ideal Customer Avatar**
+
+- Indie makers, no‑code founders, agency studios, PMs at seed‑A stage startups
+
+---
+
+### **🧭 Competitors & Alternatives**
+
+- Notion templates, AI prompt tools, low‑code kits, agencies, traditional PM tools
+
+---
+
+### **⚔️ Competitor Analysis (Differentiation)**
+
+| Vector | Tower | Notion/PBs | Agencies |
+| --- | --- | --- | --- |
+| Speed | Instant blueprint | Manual | Slow |
+| Cost | <$200/mo | Free–$ | $$$$ |
+| Output | Spec, backlog, wires | Docs | Varies |
+
+---
+
+### **📈 Marketing & Growth Strategy**
+
+- YouTube builds; template marketplace; partner with dev toolchains
+
+---
+
+### **🚦 Distribution Channels**
+
+- Web app, Figma plugin, VSCode/CLI export
+
+---
+
+### **🌱 PLG Loops & Viral Mechanics**
+
+- Shareable blueprints; “Remix” button; public template gallery
+
 3. **Style:** “Which type of aesthetics do you prefer?” → Choose from visual swatches
 
 4. **Core Features:** Suggested blocks appear → Click to add or remove

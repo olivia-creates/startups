@@ -84,6 +84,68 @@ Imagine:
 
 ---
 
+---
+
+**🏹 Ideal Customer Avatar**
+
+- DTC brands ($2–50M revenue) on Shopify/BigCommerce craving performance channels
+- SMB SaaS with self-serve checkout; agencies running performance programs
+- Long-tail creators (5k–250k followers) and community leaders
+
+---
+
+**🧭 Competitors & Alternatives**
+
+- Amazon Associates; Impact/Rakuten affiliate networks; Shopify Collabs; manual coupon codes; ad platforms
+
+---
+
+**⚔️ Competitor Analysis (Differentiation)**
+
+| Vector | RealDeal | Affiliate Networks | Shopify Collabs | Coupon Codes |
+| --- | --- | --- | --- | --- |
+| Onboarding | Anyone can start with any product link | Brand-led, app required | Brand-led | Manual setup |
+| Payouts | Escrow + instant split | Net-30/60 | Brand-controlled | Manual |
+| Compliance | Auto-disclosures | Varies | Varies | None |
+| Analytics | Cross-merchant CRM | Per-merchant | Per-merchant | None |
+
+---
+
+**📈 Marketing & Growth Strategy**
+
+- Bootstrap via creators; one-click import of past links; B2B wedge: brands seek UGC
+- Partner channels: e‑comm platforms, agencies; PR: creator economy + performance media
+
+---
+
+**🚦 Distribution Channels**
+
+- Shopify/BigCommerce apps; browser extension; mobile share sheet; API for marketplaces
+
+---
+
+**🌱 PLG Loops & Viral Mechanics**
+
+- Every shared link advertises the platform; referral bounties for power users; brand discovery feed
+
+---
+
+**🛡️ Risks & Mitigation**
+
+- Fraud → escrow, device/behavioral fingerprinting
+- Chargebacks → risk scoring + reserve balances
+- Brand safety → allowlists and disclosure enforcement
+
+---
+
+**📉 Predictive Financials & Metrics**
+
+- ARPU per active brand: $1,200–$3,600/yr (SaaS + take)
+- ARPU per active creator: $60–$180/yr
+- CAC (brand): $120–$400; CAC (creator): $6–$15; LTV payback: <6 months
+- North star: GMV via RealDeal links; creator activation/retention
+
+
 **⏳ Why Now**
  Social platforms are flooded with content but monetization remains clumsy and fragmented. At the same time, brands need fresh, authentic distribution as ad channels crumble. RealDeal bridges the gap — automating trust, tracking, and payment so growth feels effortless.
 

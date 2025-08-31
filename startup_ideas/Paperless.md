@@ -18,8 +18,8 @@
 
 ### **💡 The Insight**
 
-Paper receipts are outdated: wasteful, inconvenient, and short-lived.  
- But receipts are also a key touchpoint—perfect for loyalty, expense tracking, and frictionless returns.  
+Paper receipts are outdated: wasteful, inconvenient, and short-lived.
+ But receipts are also a key touchpoint—perfect for loyalty, expense tracking, and frictionless returns.
  A mobile-first, interactive receipt system turns paper clutter into a powerful digital asset.
 
 ---
@@ -80,7 +80,7 @@ Mobill is a smart, paperless receipt hub that reimagines the receipt as a functi
 
   * Eliminates printing costs entirely \+ saves on maintenance & device downtime.
 
-* **Upside**: Each digital receipt doubles as a **marketing and loyalty asset**, generating **incremental sales uplift (2–5%)** through embedded promotions.  
+* **Upside**: Each digital receipt doubles as a **marketing and loyalty asset**, generating **incremental sales uplift (2–5%)** through embedded promotions.
    👉 Instead of being a cost center, receipts become a **revenue driver**.
 
 ---
@@ -138,6 +138,67 @@ Mobill is a smart, paperless receipt hub that reimagines the receipt as a functi
 ---
 
 ### **✨ Tagline**
+
+---
+
+### **🏹 Ideal Customer Avatar**
+
+- Retailers and cafés (Toast/Square), SMBs; sustainability-forward enterprises; consumers with heavy expense needs
+
+---
+
+### **🧭 Competitors & Alternatives**
+
+- POS-native receipts, email-only receipts, expense apps; incumbents lacking CRM/loyalty surface
+
+---
+
+### **⚔️ Competitor Analysis (Differentiation)**
+
+| Vector | Mobill | POS Receipts | Email Receipts | Expense Apps |
+| --- | --- | --- | --- | --- |
+| Setup | QR/SMS/app | Device + printers | Email dependency | User-led |
+| CRM | Loyalty in-receipt | None | Minimal | None |
+| Eco | Zero paper | Paper waste | Paperless | Paperless |
+
+---
+
+### **📈 Marketing & Growth Strategy**
+
+- POS partnerships, sustainability PR, chain pilots; consumer app via receipts sharing perks
+
+---
+
+### **🚦 Distribution Channels**
+
+- POS app stores, QR at checkout, bank app integrations
+
+---
+
+### **🌱 PLG Loops & Viral Mechanics**
+
+- Share guarantees, cashback, loyalty trees; refer-a-friend inside receipts
+
+---
+
+### **🛡️ Risks & Mitigation**
+
+- Retail IT friction → one-click POS plugins; privacy → opt-in data & bank-level security
+
+---
+
+### **📉 Predictive Financials & Metrics**
+
+- SaaS $49–99/mo per store; CAC $300–$800 per chain store pilot; LTV $1,200–$3,600/store; payback <9 months
+
+---
+
+### **🎯 Storytelling Layer**
+
+- Slogan: “Your receipts, finally useful.”
+- Header: “From paper waste to profit.”
+- Sub‑header: “Receipts that build loyalty, save costs, and plant trees.”
+
 
 “Mobill — Paperless possibilities.”
 

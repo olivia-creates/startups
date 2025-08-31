@@ -39,6 +39,67 @@ Imagine:
 
 * Approving the perfect client reply in seconds while commuting
 
+---
+
+**🏹 Ideal Customer Avatar**
+
+- Cross‑functional teams 5–200 people; founders, PMs, producers drowning in approvals
+
+---
+
+**🧭 Competitors & Alternatives**
+
+- Notion/Asana/Jira + ad‑hoc docs; AI assistants without workflow context
+
+---
+
+**⚔️ Competitor Analysis (Differentiation)**
+
+| Vector | NewWork | PM Suites | AI Assistants |
+| --- | --- | --- | --- |
+| Decisioning | Built‑in | External | Suggest-only |
+| Evidence | TaskTrust meter | None | Opaque |
+| Flow | Cross‑tool | Siloed | Siloed |
+
+---
+
+**📈 Marketing & Growth Strategy**
+
+- Product-led: free tier + “Win the Meeting” challenge; creator ops channels
+
+---
+
+**🚦 Distribution Channels**
+
+- Slack/Email add-ins; browser app; enterprise SSO
+
+---
+
+**🌱 PLG Loops & Viral Mechanics**
+
+- Shareable decision receipts; team invites to unlock automations
+
+---
+
+**🛡️ Risks & Mitigation**
+
+- Change resistance → embed in existing flows; privacy → on‑prem/keys vault
+
+---
+
+**📉 Predictive Financials & Metrics**
+
+- $12–$49 user/month; CAC $8–$25; LTV $144–$588; payback <3 months
+
+---
+
+**🎯 Storytelling Layer**
+
+- Slogan: “Ship faster with fewer meetings.”
+- Header: “Decide, delegate, deliver.”
+- Sub‑header: “From decisions to done — one flow.”
+
+
 * AI auto-sending the right onboarding doc without asking — because it learned from you
 
 * Watching your dashboard turn green as efficiency climbs and tasks vanish
