@@ -6,7 +6,7 @@
 
 ### **❌ The Problem**
 
-* **Remote work is the new normal:** \~23% of U.S. employees (36M people) work remotely at least part-time【Backlinko】. Globally, hybrid models are here to stay.  
+* **Remote work is the new normal:** \~23% of U.S. employees (36M people) work remotely at least part-time【Backlinko】. Globally, hybrid models are here to stay.
 * In Q1 2025, **41% of U.S. jobs** featured some form of remote work—24% hybrid and 13% fully remote. That’s up significantly from just 10% remote two years earlier.[Oyster HR+6Robert Half+6StrongDM+6](https://www.roberthalf.com/us/en/insights/research/remote-work-statistics-and-trends?utm_source=chatgpt.com)
 
 * **Telework remains prominent**: The U.S. Bureau of Labor Statistics reports that as of Q1 2024, nearly **22.9% of workers** performed some telework, up from 21.5% in early 2023\.
@@ -25,7 +25,7 @@
 
 ### **💡 The Insight**
 
-Every café seat is valuable real estate.  
+Every café seat is valuable real estate.
  With the right system, cafés can become **micro co-working spaces** — balancing turnover, boosting revenues, and fostering community while addressing the **loneliness crisis** among remote workers.
 
 ---
@@ -114,6 +114,51 @@ Dropin transforms café Wi-Fi into a **pay-to-stay coworking system**:
 
 * Higher seat turnover \= more customers served per day.
 
+
+---
+
+### **📊 Market Sizing (TAM / SAM / SOM)**
+
+| Segment | Definition | Estimate | Notes |
+| --- | --- | ---: | --- |
+| TAM | Global café + coffee market | $300B+ | Addressable venues |
+| SAM | POS-integrated cafés (Toast/Square/Lightspeed) | $30B | Targetable |
+| SOM (Y3) | Subs × ARPU | 10k cafés × $99/mo = $12M ARR | Plus rev share |
+
+---
+
+### **📉 Unit Economics — At a glance**
+
+| Metric | Value | Notes |
+| --- | ---: | --- |
+| ARPU | $50–$200/mo | Tiered |
+| CAC | $200–$600 | POS partnership co-sell |
+| LTV | $1,200–$4,800 | 24 months |
+| Gross margin | 75–85% | SaaS |
+| Payback | < 4 months | With upsell rev share |
+
+---
+
+### **🏹 Ideal Customer Avatar**
+
+- Independents and small chains with high laptop traffic
+
+---
+
+### **🧭 Competitors & Alternatives**
+
+- Wi-Fi timers, blunt time caps, no solution; coworking memberships
+
+---
+
+### **⚔️ Competitor Analysis (Differentiation)**
+
+| Vector | Dropin | Time Caps | Coworking |
+| --- | --- | --- | --- |
+| Experience | Friendly upsells | Punitive | Off-site |
+| Revenue | Increases AOV | Neutral | N/A |
+| Setup | Software-only | Policy | Lease |
+
 ---
 
 ### **⏳ Why Now**
@@ -132,7 +177,7 @@ Dropin transforms café Wi-Fi into a **pay-to-stay coworking system**:
 
 “Dropin — Your pass to work, connect, and belong.”
 
-Could extend it beyond coffee shops, a mutli service wifi network that connects people, workers, beyond just having wifi as a cheap commodity with weird password. 
+Could extend it beyond coffee shops, a mutli service wifi network that connects people, workers, beyond just having wifi as a cheap commodity with weird password.
 
 The password used can be designed and sold as an ad: “Caramelfrappucino” \- makes you want to buy it, or think of it at least.
 

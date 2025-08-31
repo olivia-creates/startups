@@ -159,6 +159,29 @@ KPIs (Phase 1)
 
 See it. Feel it. Own it.
 
+---
+
+### **📊 Market Sizing (TAM / SAM / SOM)**
+
+| Segment | Definition | Estimate | Notes |
+| --- | --- | ---: | --- |
+| TAM | Global fashion e‑commerce enablement | $20B+ | CX/conv tools |
+| SAM | NA/EU fashion brands $20M–$1B | $4B–$8B | Shopify+, Salesforce Commerce |
+| SOM (Y3) | ARR from 400–1,000 brands | $10M–$25M | $2–$10k/mo tiers |
+
+---
+
+### **📉 Unit Economics — At a glance**
+
+| Metric | Value | Notes |
+| --- | ---: | --- |
+| Price | $0.15–$0.40/session + $2–$10k/mo | Tiered |
+| COGS | $0.03–$0.12/session | 70–85% GM |
+| CAC | $6k–$20k | SI/agency partners |
+| LTV | $60k–$240k | 24 months |
+| Payback | 3–6 months | With 2–4% conv lift |
+
+
 * Add-to-cart uplift vs. brand baseline ≥ +12%
 * Conversion uplift vs. control ≥ +3–5%
 * Return rate reduction (size/style) ≥ −8–12%

@@ -175,6 +175,29 @@ For Landlords:
 
 ---
 
+### **📊 Market Sizing (TAM / SAM / SOM)**
+
+| Segment | Definition | Estimate | Notes |
+| --- | --- | ---: | --- |
+| TAM | Global residential rent flows | $1.5T+ | Annual |
+| SAM | Dubai + first 3 expansion cities | $300B+ | Rent volumes |
+| SOM (Y3) | Tenants × ARPU | 5,000–10,000 tenants; $6–$12M ARR | 0.5–1% penetration |
+
+---
+
+### **📉 Unit Economics — At a glance**
+
+| Metric | Value | Notes |
+| --- | ---: | --- |
+| Platform fee | 0.5–1% of rent | On flows |
+| LTV (tenant) | AED 4.5k | 3-year stay |
+| CAC (tenant) | AED 1–3k | Partners + community |
+| Gross margin | 60–75% | With yield spread |
+| Payback | < 12 months | With returns + services |
+
+
+---
+
 ### **🎯 17. Storytelling Layer (Pitch/Website Copy)**
 
 - Slogan: “Get returns on your rent.”

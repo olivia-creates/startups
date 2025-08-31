@@ -488,6 +488,29 @@ For key decisions, customers can request the actual human executive to review an
 - Sales efficiency: PLG + partner channels (institutions) target CAC $300–$1,200; LTV $6k–$24k (12–24 months)
 - Gross margin: 70–85% blended (software‑driven usage dominates)
 
+
+---
+
+### **📊 Market Sizing (TAM / SAM / SOM)**
+
+| Segment | Definition | Estimate | Notes |
+| --- | --- | ---: | --- |
+| TAM | Global exec advisory, coaching, and knowledge tools | $30B–$60B | Coaching, consulting, L&D |
+| SAM | Mid-market NA/EU exec teams adopting AI advisors | $6B–$12B | Top-down and PLG wedges |
+| SOM (Y3) | Paid seats × ARPU | 10–30k seats; $12M–$30M ARR | With 1–3% of SAM |
+
+---
+
+### **📉 Unit Economics — At a glance**
+
+| Metric | Value | Notes |
+| --- | ---: | --- |
+| ARPU | $999–$4,999 / month (team/enterprise) | Session credits + seats |
+| CAC | $300–$1,200 | Content + partner channels |
+| LTV | $6k–$24k | 12–24 months |
+| Gross margin | 70–85% | Model + infra efficiency |
+| Payback | < 4 months | With 2+ active exec agents/team |
+
 ---
 
 ### **✨ Tagline**

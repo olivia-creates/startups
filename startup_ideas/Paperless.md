@@ -95,6 +95,29 @@ Mobill is a smart, paperless receipt hub that reimagines the receipt as a functi
 
 ---
 
+### **📊 Market Sizing (TAM / SAM / SOM)**
+
+| Segment | Definition | Estimate | Notes |
+| --- | --- | ---: | --- |
+| TAM | Global digital receipts + CRM surface | $5B+ | 11%+ CAGR |
+| SAM | POS-integrated retail/SMB in NA/EU | $1.5B–$2.5B | Toast, Square, Shopify |
+| SOM (Y3) | Stores × ARPU | 15–30k stores × $79/mo = $14–$28M ARR | chain pilots |
+
+---
+
+### **📉 Unit Economics — At a glance**
+
+| Metric | Value | Notes |
+| --- | ---: | --- |
+| ARPU | $49–$99/store/mo | Tiered |
+| CAC | $300–$800 | Channel partners |
+| LTV | $1,200–$3,600 | 24–36 months |
+| Gross margin | 75–85% | SaaS |
+| Payback | 6–9 months | With chain rollouts |
+
+
+---
+
 ### **💰 Business Model**
 
 * **B2B SaaS for Retailers & SMEs**

@@ -170,6 +170,29 @@ An open marketplace platform specifically for VC portfolio companies that enable
 
 ---
 
+---
+
+### **📊 Market Sizing (TAM / SAM / SOM)**
+
+| Segment | Definition | Estimate | Notes |
+| --- | --- | ---: | --- |
+| TAM | Global affiliate/performance networks | $50B+ | Growing 10%+ |
+| SAM | VC portfolio company ecosystems | $2B–$5B | Targeted niche |
+| SOM (Y3) | GMV × take rate | $150M GMV; $15M revenue | With 200+ companies |
+
+---
+
+### **📉 Unit Economics — At a glance**
+
+| Metric | Value | Notes |
+| --- | ---: | --- |
+| Take rate | 10% of commissions | Avg 15% commission |
+| CAC (company) | $500–$1,500 | VC partner co-sell |
+| LTV (company) | $12k–$36k/yr | SaaS + take |
+| Gross margin | 60–75% | After Stripe + compliance |
+| Payback | < 6 months | With 3+ active affiliates |
+
+
 ### **🎯 17. Storytelling Layer (Pitch/Website Copy)**
 
 **Slogan**: *"Turn your network into your net worth"*

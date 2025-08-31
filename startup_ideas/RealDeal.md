@@ -145,6 +145,29 @@ Imagine:
 - CAC (brand): $120–$400; CAC (creator): $6–$15; LTV payback: <6 months
 - North star: GMV via RealDeal links; creator activation/retention
 
+---
+
+**📊 Market Sizing (TAM / SAM / SOM)**
+
+| Segment | Definition | Estimate | Notes |
+| --- | --- | ---: | --- |
+| TAM | Global affiliate + creator commerce enablement | $50B–$100B | Affiliate networks + creator monetization infra |
+| SAM | US/EU DTC brands on Shopify/BigCommerce | $8B–$12B | Targetable via app stores/partners |
+| SOM (Y3) | GMV through RealDeal × take | $250M–$500M GMV; $7.5M–$18M rev | With 10–20k active brands, 50–150k active creators |
+
+---
+
+**📉 Unit Economics — At a glance**
+
+| Metric | Value | Notes |
+| --- | ---: | --- |
+| Take rate | 12% of commission | Avg commission 8–15% |
+| CAC (brand / creator) | $120–$400 / $6–$15 | Partner channels + PLG |
+| LTV (brand / creator) | $1.2k–$6k / $60–$180 per year | SaaS + take |
+| Gross margin | 65–80% | After payment fees and ops |
+| Payback | < 6 months | With 3–5 live links/brand |
+
+
 
 **⏳ Why Now**
  Social platforms are flooded with content but monetization remains clumsy and fragmented. At the same time, brands need fresh, authentic distribution as ad channels crumble. RealDeal bridges the gap — automating trust, tracking, and payment so growth feels effortless.

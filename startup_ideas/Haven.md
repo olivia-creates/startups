@@ -215,6 +215,29 @@ People don’t want *more convos*, they want **qualified matches**.
 
 ---
 
+---
+
+### **📊 Market Sizing (TAM / SAM / SOM)**
+
+| Segment | Definition | Estimate | Notes |
+| --- | --- | ---: | --- |
+| TAM | Global dating + matchmaking | $10B+ | Apps + services |
+| SAM | Premium curated dating segments | $2B–$4B | 30–55 urban professionals |
+| SOM (Y3) | Subs × ARPU | 25–50k subs; $45M–$90M ARR | $149–$299/mo |
+
+---
+
+### **📉 Unit Economics — At a glance**
+
+| Metric | Value | Notes |
+| --- | ---: | --- |
+| ARPU | $149–$299/mo | Concierge add-ons |
+| CAC | $120–$220 | Paid + creators |
+| LTV | $1,200–$2,400 | 8–12 months |
+| Gross margin | 75–85% | Software-led |
+| Payback | < 2 months | With concierge upsells |
+
+
 ### **✨ Tagline**
 
 Love works in the background.

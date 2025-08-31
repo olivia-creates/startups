@@ -147,6 +147,29 @@ A real estate investment platform that **maps context onto listings** and enable
 
 ---
 
+### **📊 Market Sizing (TAM / SAM / SOM)**
+
+| Segment | Definition | Estimate | Notes |
+| --- | --- | ---: | --- |
+| TAM | Global real estate investing | $11T+ flows | Across classes |
+| SAM | Cross-border retail fractional deals | $15B–$30B | Platforms + brokered |
+| SOM (Y3) | GMV × fee + SaaS | $200M GMV; $3–$5M fees; $0.5M SaaS | Select regions |
+
+---
+
+### **📉 Unit Economics — At a glance**
+
+| Metric | Value | Notes |
+| --- | ---: | --- |
+| Fee | 1–2% of GMV | Tiered |
+| CAC | $120–$300 | Content + developer partners |
+| LTV | $450–$1,200 | Fees + premium |
+| Gross margin | 65–75% | After data/licensing |
+| Payback | < 6 months | With 2+ transactions/user |
+
+
+---
+
 ### **✨ Tagline**
 
 See the world’s opportunities, not just listings.

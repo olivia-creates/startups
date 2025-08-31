@@ -54,6 +54,28 @@ South Asians don’t need another Western app — they need a preventive, cultur
 
 Live longer, love longer.
 
+---
+
+### **📊 Market Sizing (TAM / SAM / SOM)**
+
+| Segment | Definition | Estimate | Notes |
+| --- | --- | ---: | --- |
+| TAM | Cardiometabolic digital health | $20B+ | Globally |
+| SAM | South Asian diaspora + India | $3B–$6B | High incidence |
+| SOM (Y3) | Subs × ARPU | 200k × $5–$10/mo = $12–$24M ARR | With clinical partners |
+
+---
+
+### **📉 Unit Economics — At a glance**
+
+| Metric | Value | Notes |
+| --- | ---: | --- |
+| ARPU | $9.99/mo; $199/yr family | Tiered |
+| CAC | $15–$40 | Community partners |
+| Gross margin | 85–90% | Software |
+| Payback | < 2 months | With family plans |
+
+
 
 ### **🚀 3. The Solution**
 

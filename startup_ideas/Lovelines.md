@@ -208,6 +208,28 @@ The secret? **Story**. Strong narrative arcs, emotional beats, and compelling ch
 
 ---
 
+**📊 Market Sizing (TAM / SAM / SOM)**
+
+| Segment | Definition | Estimate | Notes |
+| --- | --- | ---: | --- |
+| TAM | Mobile reading + interactive fiction | $10B+ | Global |
+| SAM | NA/EU romance/thriller interactive | $1B–$2B | BookTok + apps |
+| SOM (Y3) | Subs × ARPU | 250k × $6/mo = $18M ARR | Creators + pubs |
+
+---
+
+**📉 Unit Economics — At a glance**
+
+| Metric | Value | Notes |
+| --- | ---: | --- |
+| ARPU | $4–$8/mo | Tiers + collectibles |
+| CAC | <$2 | Creator channels |
+| Gross margin | 70–85% | Inference/media |
+| Payback | < 1 month | With drops |
+
+
+---
+
 **✨ Tagline**
 
 Step into the story.

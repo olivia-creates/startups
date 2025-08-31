@@ -130,6 +130,29 @@ District Impact (steady‑state, Yr 2)
 Primary: Municipalities, downtown alliances, and mixed‑use developers
 * Need a data‑led tenant/anchor strategy and measurable impact
 
+
+---
+
+### **📊 Market Sizing (TAM / SAM / SOM)**
+
+| Segment | Definition | Estimate | Notes |
+| --- | --- | ---: | --- |
+| TAM | Urban consulting + economic dev tools | $25B+ | Gov + private |
+| SAM | District-scale playbooks in NA/EU | $3B–$6B | Public-private |
+| SOM (Y3) | Districts × ACV | 60–120 districts × $240k = $14–$29M ARR | Multi-year |
+
+---
+
+### **📉 Unit Economics — At a glance**
+
+| Metric | Value | Notes |
+| --- | ---: | --- |
+| ACV | $150k–$500k | Scope-dependent |
+| COGS | $70k per 16-week | Data/design/field |
+| Gross margin | 65–75% | Standardized kits |
+| CAC | $10k–$40k | BD + RFP |
+| Payback | < 1 cycle | With expansion |
+
 Secondary: Lenders and CDFIs
 * Need standardized, location‑specific plans to reduce default risk
 
