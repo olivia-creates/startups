@@ -31,7 +31,7 @@ function mdToHtml(md){
     const out = [];
     let i = 0;
     const hasPipe = (s)=>/\|/.test(s);
-    const isDiv = (s)=>/^\s*\|?\s*:?-{3,}\s*(\|\s*:?-{3,}\s*)+\|?\s*$/.test(s || '');
+    const isDiv = (s)=>/^\s*\|?\s*:?-{3,}:?\s*(\|\s*:?-{3,}:?\s*)+\|?\s*$/.test(s || '');
     const split = (r)=>String(r||'').trim().replace(/^\|/,'').replace(/\|$/,'').split('|').map(c=>c.trim());
     while(i < lines.length){
       const line = lines[i];
