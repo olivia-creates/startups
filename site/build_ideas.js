@@ -26,25 +26,37 @@ function mdToHtml(md){
 
   // Convert GitHub-style tables before paragraphizing
   function convertTables(src){
+    src = src.replace(/\r/g, '');
     const lines = src.split('\n');
     const out = [];
-    let i=0;
-    const isRow = (s)=>/\|/.test(s);
-    const isDiv = (s)=>/^\s*\|?\s*:?-{3,}\s*(\|\s*:?-{3,}\s*)+\|?\s*$/.test(s);
-    while(i<lines.length){
-      if(i+1<lines.length && isRow(lines[i]) && isDiv(lines[i+1])){
-        const header = lines[i];
-        i+=2; const rows=[];
-        while(i<lines.length && isRow(lines[i]) && lines[i].trim()!==''){ rows.push(lines[i]); i++; }
-        const split = (r)=>r.trim().replace(/^\|/,'').replace(/\|$/,'').split('|').map(c=>c.trim());
-        const ths = split(header);
-        let html = '<table><thead><tr>'+ths.map(h=>'<th>'+h+'</th>').join('')+'</tr></thead><tbody>';
-        for(const r of rows){ const tds=split(r); html += '<tr>'+tds.map(d=>'<td>'+d+'</td>').join('')+'</tr>'; }
-        html += '</tbody></table>';
-        out.push(html);
-        continue;
+    let i = 0;
+    const hasPipe = (s)=>/\|/.test(s);
+    const isDiv = (s)=>/^\s*\|?\s*:?-{3,}\s*(\|\s*:?-{3,}\s*)+\|?\s*$/.test(s || '');
+    const split = (r)=>String(r||'').trim().replace(/^\|/,'').replace(/\|$/,'').split('|').map(c=>c.trim());
+    while(i < lines.length){
+      const line = lines[i];
+      if (hasPipe(line)){
+        // Allow optional blank line between header and divider
+        let j = i + 1;
+        while (j < lines.length && lines[j].trim() === '') j++;
+        if (j < lines.length && isDiv(lines[j])){
+          const header = line;
+          j++;
+          const rows = [];
+          while (j < lines.length && hasPipe(lines[j]) && lines[j].trim() !== ''){ rows.push(lines[j]); j++; }
+          // Only render as table if we have at least one data row
+          if (rows.length){
+            const ths = split(header);
+            let html = '<table><thead><tr>' + ths.map(h => '<th>'+h+'</th>').join('') + '</tr></thead><tbody>';
+            for (const r of rows){ const tds = split(r); html += '<tr>' + tds.map(d => '<td>'+d+'</td>').join('') + '</tr>'; }
+            html += '</tbody></table>';
+            out.push(html);
+            i = j;
+            continue;
+          }
+        }
       }
-      out.push(lines[i]);
+      out.push(line);
       i++;
     }
     return out.join('\n');

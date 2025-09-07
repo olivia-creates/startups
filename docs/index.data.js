@@ -120,6 +120,14 @@ window.IDEAS = [
     "rank": 11
   },
   {
+    "title": "WalkyWalky",
+    "slug": "WalkyWalky",
+    "one_liner": "Maps that care about safety and joy — avoid dark streets and discover what you love.",
+    "stat": "Personalized routes • On‑device privacy • Merchant walk‑in promos",
+    "status": "In revision",
+    "rank": 9
+  },
+  {
     "title": "Zinda (Ali's idea)",
     "slug": "Zinda",
     "one_liner": "Light for your heart’s health — phone PPG + doctor‑guided advice for South Asians.",
