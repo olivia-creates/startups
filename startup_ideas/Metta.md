@@ -12,6 +12,9 @@ last_updated: 2025-09-07
 
 ### ***Modern temple.***
 
+
+Metta is a membership‑based mindfulness studio for super humans seeking to activate their full powers, find peace, and amplify their success in all dimensions of life. It makes the spiritual accessible to influencers and everyday seekers alike — inside luxurious modern temples that deliver immersive, transcendental high‑tech experiences.
+
 ---
 
 ### **❌ 1. The Problem**
@@ -80,9 +83,11 @@ Design & tech:
 
 ### **🏹 7. Ideal Customer Avatar**
 
-- Primary: 25–55 urban professionals; wellness‑curious, spiritually open, design‑sensitive; $60k–$250k income
+- Primary: Influencers and game changers ready to awaken and establish a strong spiritual foundation to benefit all aspects of their lives; human beings seeking transcendence and liberation.
+- Demographic: 27–57 affluent business people, psychonauts, and travelers who are constantly seeking to grow.
 - Secondary: Corporate teams; creators; founders; therapists seeking spaces
-- Psychographics: values growth, aesthetics, community, and gentle science
+- Psychographics: values growth, aesthetics, community, gentle science, and service
+- Community effect: Metta transforms its member base into a strong, connected network of high‑impact individuals through the power of communal events and technology.
 
 ---
 
@@ -122,6 +127,14 @@ Design & tech:
 - Corporate wellness partnerships; concierge partnerships (hotels/residential)
 - “Invite a friend” nights; seasonal ceremonies; member referral credits
 - Data‑driven programming (keep the hits; sunset the misses)
+
+#### Growth Plan
+
+- We’re at the cusp of a consciousness shift that will call for an ever‑growing offer of safe spaces to deepen mindfulness practices and build strong communities.
+- Franchise model: white‑labelled sites with all promotional material, clear guidelines and equipment for all events, with online training for facilitators
+- % commission for teachers and referral program for members
+- Online classes and virtual events to generate passive income
+- Partnership with mental health organizations
 
 ---
 
@@ -181,6 +194,12 @@ Design & tech:
 | Location COGS | Rent/ops $35–$60k/mo | City‑dependent |
 | Contribution margin | 20–35% at scale | After facilitators + ops |
 | Payback | 12–24 months/store | With disciplined rollout |
+
+---
+
+### **🌍 Vision & Network**
+
+We democratize the spiritual by surfacing the science behind the esoteric, and empower the rise of consciousness through a global network of devoted franchisees operating to exacting brand and experience standards.
 
 ---
 
