@@ -113,7 +113,7 @@ Design & tech:
 
 ### **💰 10. Business Model**
 
-- Membership (monthly): $30 (Lite) / $90 (Core) / $200 (Unlimited+guests)
+- Membership (monthly): $60 (Lite) / $180 (Core) / $400 (Unlimited+guests)
 - Drop‑ins: $25–$40 per session; Packs (5/10)
 - Corporate: team sessions, offsites, stipends integration
 - Brand partnerships: sensory sponsors (tea, scent, audio), launches
@@ -188,7 +188,7 @@ Design & tech:
 
 | Metric | Value | Notes |
 | --- | ---: | --- |
-| ARPU (blended) | $65–$95/mo | Mix of tiers + drop‑ins |
+| ARPU (blended) | $120–$180/mo | Reflects doubled pricing, mix of tiers + drop‑ins |
 | Capacity | 3 rooms × (10–18 seats) × 8–12 sessions/day | Flagship example |
 | Occupancy | 45–65% target in first 18 months | Scales with cohorts |
 | Location COGS | Rent/ops $35–$60k/mo | City‑dependent |
