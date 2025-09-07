@@ -33,6 +33,9 @@ Consciousness is the next revolution. Technology shouldn’t numb us — it can 
 
 Metta is a luxury community space — a modern temple — that leverages all senses to induce higher states of consciousness, mindfulness, connection, and healing.
 
+A centerpiece of each location is a multimedia dome that choreographs 360° projection, immersive spatial audio and healing sound waves, programmable light, curated aromatherapy, gentle haptics/touch, and even taste (ceremonial teas/tinctures) to guide groups into restorative, elevated states — the future of mindfulness, in a chic, conscious space to recharge.
+
+
 Core experiences (curated, scheduled, consistent):
 - Guided self‑love meditation (breath, visualization, light/scent)
 - Mindful Money Journey (somatic finance, clarity rituals)
