@@ -64,6 +64,14 @@ window.IDEAS = [
     "rank": 16
   },
   {
+    "title": "Metta",
+    "slug": "Metta",
+    "one_liner": "Modern temple — sublime, multi‑sensory spaces for connection and care.",
+    "stat": "Consciousness is the next revolution.",
+    "status": "In revision",
+    "rank": 12
+  },
+  {
     "title": "Mirroir.ai",
     "slug": "Mirroir.ai",
     "one_liner": "See it. Feel it. Own it — personalized, cinematic shopping that lifts conversion and slashes returns.",
